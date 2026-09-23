@@ -10,7 +10,9 @@
     "BENCHMARK.md",
     "VERIFICATION.md",
     "evaluations/20260923/README.md",
-    "evaluations/20260923/PROTOCOL.md"
+    "evaluations/20260923/PROTOCOL.md",
+    "evaluations/20260923-fast-path/README.md",
+    "evaluations/20260923-fast-path/PROTOCOL.md"
   ],
   "cli": [
     {

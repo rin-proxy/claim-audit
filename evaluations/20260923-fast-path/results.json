@@ -1,0 +1,5330 @@
+{
+  "attempts": 120,
+  "rows": [
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "absence-not-never",
+      "checks": {
+        "answer": true,
+        "claim_status": false,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": false,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 6,
+      "passed": false,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 0,
+      "score": 0.75,
+      "target_skill_read": true,
+      "usage": {
+        "input": 9518,
+        "output": 1118,
+        "cacheRead": 35840,
+        "cacheWrite": 0,
+        "total": 46476
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": false,
+        "claim_status": "refuted",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 53217
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "absence-not-never",
+      "checks": {
+        "answer": true,
+        "claim_status": false,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": false,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 7,
+      "passed": false,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 0,
+      "score": 0.75,
+      "target_skill_read": true,
+      "usage": {
+        "input": 10734,
+        "output": 1748,
+        "cacheRead": 45568,
+        "cacheWrite": 0,
+        "total": 58050
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": false,
+        "claim_status": "refuted",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 79380
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "absence-not-never",
+      "checks": {
+        "answer": true,
+        "claim_status": false,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": false,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 7,
+      "passed": false,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 1,
+      "score": 0.75,
+      "target_skill_read": false,
+      "usage": {
+        "input": 19653,
+        "output": 1793,
+        "cacheRead": 36736,
+        "cacheWrite": 0,
+        "total": 58182
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": false,
+        "claim_status": "refuted",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 78241
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "absence-not-never",
+      "checks": {
+        "answer": true,
+        "claim_status": false,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": false,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 7,
+      "passed": false,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 1,
+      "score": 0.75,
+      "target_skill_read": true,
+      "usage": {
+        "input": 18021,
+        "output": 1430,
+        "cacheRead": 36352,
+        "cacheWrite": 0,
+        "total": 55803
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": false,
+        "claim_status": "refuted",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 65508
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "absence-not-never",
+      "checks": {
+        "answer": true,
+        "claim_status": false,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": false,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 5,
+      "passed": false,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 2,
+      "score": 0.75,
+      "target_skill_read": false,
+      "usage": {
+        "input": 17023,
+        "output": 994,
+        "cacheRead": 20352,
+        "cacheWrite": 0,
+        "total": 38369
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": false,
+        "claim_status": "refuted",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 48379
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "absence-not-never",
+      "checks": {
+        "answer": true,
+        "claim_status": false,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": false,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 7,
+      "passed": false,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 2,
+      "score": 0.75,
+      "target_skill_read": true,
+      "usage": {
+        "input": 10249,
+        "output": 1636,
+        "cacheRead": 45056,
+        "cacheWrite": 0,
+        "total": 56941
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": false,
+        "claim_status": "refuted",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 67007
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "causal-overreach",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 5,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 0,
+      "score": 1.0,
+      "target_skill_read": false,
+      "usage": {
+        "input": 9239,
+        "output": 987,
+        "cacheRead": 28032,
+        "cacheWrite": 0,
+        "total": 38258
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": null,
+        "claim_status": "unverified",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": true,
+        "causal_claim": false
+      },
+      "wall_ms": 65945
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "causal-overreach",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 10,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 0,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 22046,
+        "output": 2112,
+        "cacheRead": 62976,
+        "cacheWrite": 0,
+        "total": 87134
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": null,
+        "claim_status": "unverified",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": true,
+        "causal_claim": false
+      },
+      "wall_ms": 115965
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "causal-overreach",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 6,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 1,
+      "score": 1.0,
+      "target_skill_read": false,
+      "usage": {
+        "input": 16215,
+        "output": 1109,
+        "cacheRead": 29824,
+        "cacheWrite": 0,
+        "total": 47148
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": null,
+        "claim_status": "unverified",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": true,
+        "causal_claim": false
+      },
+      "wall_ms": 50913
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "causal-overreach",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 10,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 1,
+      "score": 1.0,
+      "target_skill_read": false,
+      "usage": {
+        "input": 25467,
+        "output": 1704,
+        "cacheRead": 52608,
+        "cacheWrite": 0,
+        "total": 79779
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": null,
+        "claim_status": "unverified",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": true,
+        "causal_claim": false
+      },
+      "wall_ms": 131234
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "causal-overreach",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 8,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 2,
+      "score": 1.0,
+      "target_skill_read": false,
+      "usage": {
+        "input": 11070,
+        "output": 1844,
+        "cacheRead": 55552,
+        "cacheWrite": 0,
+        "total": 68466
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": null,
+        "claim_status": "unverified",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": true,
+        "causal_claim": false
+      },
+      "wall_ms": 74858
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "causal-overreach",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 10,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 2,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 22380,
+        "output": 2436,
+        "cacheRead": 66304,
+        "cacheWrite": 0,
+        "total": 91120
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": null,
+        "claim_status": "unverified",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": true,
+        "causal_claim": false
+      },
+      "wall_ms": 96764
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "corrected-number",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 5,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 0,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 16322,
+        "output": 1269,
+        "cacheRead": 22016,
+        "cacheWrite": 0,
+        "total": 39607
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": 41,
+        "claim_status": "verified",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 53727
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "corrected-number",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": false,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 8,
+      "passed": false,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 0,
+      "score": 0.875,
+      "target_skill_read": true,
+      "usage": {
+        "input": 19927,
+        "output": 2092,
+        "cacheRead": 46464,
+        "cacheWrite": 0,
+        "total": 68483
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": 41,
+        "claim_status": "verified",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": true,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 69021
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "corrected-number",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": false,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 6,
+      "passed": false,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 1,
+      "score": 0.875,
+      "target_skill_read": true,
+      "usage": {
+        "input": 18759,
+        "output": 1399,
+        "cacheRead": 27264,
+        "cacheWrite": 0,
+        "total": 47422
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": 41,
+        "claim_status": "verified",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": true,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 57772
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "corrected-number",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 7,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 1,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 18671,
+        "output": 1615,
+        "cacheRead": 36736,
+        "cacheWrite": 0,
+        "total": 57022
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": 41,
+        "claim_status": "verified",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 68961
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "corrected-number",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": false,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 7,
+      "passed": false,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 2,
+      "score": 0.875,
+      "target_skill_read": true,
+      "usage": {
+        "input": 18950,
+        "output": 1363,
+        "cacheRead": 35840,
+        "cacheWrite": 0,
+        "total": 56153
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": 41,
+        "claim_status": "verified",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": true,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 60640
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "corrected-number",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": false,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 8,
+      "passed": false,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 2,
+      "score": 0.875,
+      "target_skill_read": false,
+      "usage": {
+        "input": 10942,
+        "output": 1708,
+        "cacheRead": 52224,
+        "cacheWrite": 0,
+        "total": 64874
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": 41,
+        "claim_status": "verified",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": true,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 70360
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "current-version",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 6,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 0,
+      "score": 1.0,
+      "target_skill_read": false,
+      "usage": {
+        "input": 9717,
+        "output": 1184,
+        "cacheRead": 36864,
+        "cacheWrite": 0,
+        "total": 47765
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": "4.2",
+        "claim_status": "verified",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 57151
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "current-version",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 7,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 0,
+      "score": 1.0,
+      "target_skill_read": false,
+      "usage": {
+        "input": 10592,
+        "output": 1542,
+        "cacheRead": 45184,
+        "cacheWrite": 0,
+        "total": 57318
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": "4.2",
+        "claim_status": "verified",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 76319
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "current-version",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 7,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 1,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 18759,
+        "output": 1281,
+        "cacheRead": 35712,
+        "cacheWrite": 0,
+        "total": 55752
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": "4.2",
+        "claim_status": "verified",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 58927
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "current-version",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 7,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 1,
+      "score": 1.0,
+      "target_skill_read": false,
+      "usage": {
+        "input": 20635,
+        "output": 1709,
+        "cacheRead": 36608,
+        "cacheWrite": 0,
+        "total": 58952
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": "4.2",
+        "claim_status": "verified",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 79338
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "current-version",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 5,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 2,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 18164,
+        "output": 1206,
+        "cacheRead": 19968,
+        "cacheWrite": 0,
+        "total": 39338
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": "4.2",
+        "claim_status": "verified",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 53863
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "current-version",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 8,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 2,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 17452,
+        "output": 1914,
+        "cacheRead": 48256,
+        "cacheWrite": 0,
+        "total": 67622
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": "4.2",
+        "claim_status": "verified",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 84374
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "denominator",
+      "checks": {
+        "answer": false,
+        "claim_status": false,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 6,
+      "passed": false,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 0,
+      "score": 0.75,
+      "target_skill_read": true,
+      "usage": {
+        "input": 9547,
+        "output": 1115,
+        "cacheRead": 36864,
+        "cacheWrite": 0,
+        "total": 47526
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": 80,
+        "claim_status": "inference",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 55867
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "denominator",
+      "checks": {
+        "answer": true,
+        "claim_status": false,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 6,
+      "passed": false,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 0,
+      "score": 0.875,
+      "target_skill_read": true,
+      "usage": {
+        "input": 10075,
+        "output": 1450,
+        "cacheRead": 36992,
+        "cacheWrite": 0,
+        "total": 48517
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": "80%",
+        "claim_status": "inference",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 64822
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "denominator",
+      "checks": {
+        "answer": true,
+        "claim_status": false,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 6,
+      "passed": false,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 1,
+      "score": 0.875,
+      "target_skill_read": true,
+      "usage": {
+        "input": 16427,
+        "output": 1237,
+        "cacheRead": 30208,
+        "cacheWrite": 0,
+        "total": 47872
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": "80%",
+        "claim_status": "inference",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 53788
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "denominator",
+      "checks": {
+        "answer": true,
+        "claim_status": false,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 7,
+      "passed": false,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 1,
+      "score": 0.875,
+      "target_skill_read": true,
+      "usage": {
+        "input": 21829,
+        "output": 1531,
+        "cacheRead": 39168,
+        "cacheWrite": 0,
+        "total": 62528
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": "80%",
+        "claim_status": "inference",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 66191
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "denominator",
+      "checks": {
+        "answer": true,
+        "claim_status": false,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 5,
+      "passed": false,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 2,
+      "score": 0.875,
+      "target_skill_read": false,
+      "usage": {
+        "input": 17361,
+        "output": 870,
+        "cacheRead": 19712,
+        "cacheWrite": 0,
+        "total": 37943
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": "80%",
+        "claim_status": "inference",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 40277
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "denominator",
+      "checks": {
+        "answer": true,
+        "claim_status": false,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 7,
+      "passed": false,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 2,
+      "score": 0.875,
+      "target_skill_read": true,
+      "usage": {
+        "input": 20263,
+        "output": 1333,
+        "cacheRead": 36736,
+        "cacheWrite": 0,
+        "total": 58332
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": "80%",
+        "claim_status": "inference",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 56890
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "different-definitions",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 5,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 0,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 15027,
+        "output": 1404,
+        "cacheRead": 23552,
+        "cacheWrite": 0,
+        "total": 39983
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": null,
+        "claim_status": "unverified",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": true,
+        "causal_claim": false
+      },
+      "wall_ms": 58529
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "different-definitions",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 13,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 0,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 13504,
+        "output": 2794,
+        "cacheRead": 108928,
+        "cacheWrite": 0,
+        "total": 125226
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": null,
+        "claim_status": "unverified",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": true,
+        "causal_claim": false
+      },
+      "wall_ms": 112338
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "different-definitions",
+      "checks": {
+        "answer": true,
+        "claim_status": false,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 5,
+      "passed": false,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 1,
+      "score": 0.875,
+      "target_skill_read": false,
+      "usage": {
+        "input": 15012,
+        "output": 1280,
+        "cacheRead": 23168,
+        "cacheWrite": 0,
+        "total": 39460
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": null,
+        "claim_status": "inference",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": true,
+        "causal_claim": false
+      },
+      "wall_ms": 50831
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "different-definitions",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 12,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 1,
+      "score": 1.0,
+      "target_skill_read": false,
+      "usage": {
+        "input": 22847,
+        "output": 2518,
+        "cacheRead": 88192,
+        "cacheWrite": 0,
+        "total": 113557
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": null,
+        "claim_status": "unverified",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": true,
+        "causal_claim": false
+      },
+      "wall_ms": 105134
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "different-definitions",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 5,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 2,
+      "score": 1.0,
+      "target_skill_read": false,
+      "usage": {
+        "input": 9589,
+        "output": 1298,
+        "cacheRead": 28544,
+        "cacheWrite": 0,
+        "total": 39431
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": null,
+        "claim_status": "unverified",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": true,
+        "causal_claim": false
+      },
+      "wall_ms": 53138
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "different-definitions",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 13,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 2,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 21020,
+        "output": 2848,
+        "cacheRead": 96256,
+        "cacheWrite": 0,
+        "total": 120124
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": null,
+        "claim_status": "unverified",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": true,
+        "causal_claim": false
+      },
+      "wall_ms": 128307
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "future-policy",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 6,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 0,
+      "score": 1.0,
+      "target_skill_read": false,
+      "usage": {
+        "input": 17725,
+        "output": 1323,
+        "cacheRead": 29440,
+        "cacheWrite": 0,
+        "total": 48488
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": "14 days",
+        "claim_status": "verified",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 61786
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "future-policy",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 7,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 0,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 16296,
+        "output": 1923,
+        "cacheRead": 40832,
+        "cacheWrite": 0,
+        "total": 59051
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": "14 days",
+        "claim_status": "verified",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 84400
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "future-policy",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 5,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 1,
+      "score": 1.0,
+      "target_skill_read": false,
+      "usage": {
+        "input": 9520,
+        "output": 1164,
+        "cacheRead": 28416,
+        "cacheWrite": 0,
+        "total": 39100
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": "14 days",
+        "claim_status": "verified",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 52877
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "future-policy",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 7,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 1,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 18855,
+        "output": 1712,
+        "cacheRead": 36736,
+        "cacheWrite": 0,
+        "total": 57303
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": "14 days",
+        "claim_status": "verified",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 74409
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "future-policy",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 6,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 2,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 9774,
+        "output": 1267,
+        "cacheRead": 35968,
+        "cacheWrite": 0,
+        "total": 47009
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": "14 days",
+        "claim_status": "verified",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 57355
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "future-policy",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 8,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 2,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 10645,
+        "output": 1894,
+        "cacheRead": 51712,
+        "cacheWrite": 0,
+        "total": 64251
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": "14 days",
+        "claim_status": "verified",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 96160
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "headline-body",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 5,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 0,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 17751,
+        "output": 1080,
+        "cacheRead": 19968,
+        "cacheWrite": 0,
+        "total": 38799
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": false,
+        "claim_status": "refuted",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 45451
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "headline-body",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 8,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 0,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 17235,
+        "output": 1860,
+        "cacheRead": 46080,
+        "cacheWrite": 0,
+        "total": 65175
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": false,
+        "claim_status": "refuted",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 69616
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "headline-body",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 5,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 1,
+      "score": 1.0,
+      "target_skill_read": false,
+      "usage": {
+        "input": 9261,
+        "output": 907,
+        "cacheRead": 27904,
+        "cacheWrite": 0,
+        "total": 38072
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": false,
+        "claim_status": "refuted",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 39916
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "headline-body",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 8,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 1,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 10489,
+        "output": 1561,
+        "cacheRead": 51584,
+        "cacheWrite": 0,
+        "total": 63634
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": false,
+        "claim_status": "refuted",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 69052
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "headline-body",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 6,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 2,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 17057,
+        "output": 964,
+        "cacheRead": 27776,
+        "cacheWrite": 0,
+        "total": 45797
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": false,
+        "claim_status": "refuted",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 48260
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "headline-body",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 8,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 2,
+      "score": 1.0,
+      "target_skill_read": false,
+      "usage": {
+        "input": 16179,
+        "output": 1664,
+        "cacheRead": 46848,
+        "cacheWrite": 0,
+        "total": 64691
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": false,
+        "claim_status": "refuted",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 75774
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "independent-confirmation",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 6,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 0,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 9647,
+        "output": 1169,
+        "cacheRead": 35840,
+        "cacheWrite": 0,
+        "total": 46656
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": true,
+        "claim_status": "verified",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 58383
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "independent-confirmation",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 7,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 0,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 18163,
+        "output": 1632,
+        "cacheRead": 36096,
+        "cacheWrite": 0,
+        "total": 55891
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": true,
+        "claim_status": "verified",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 78125
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "independent-confirmation",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 5,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 1,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 16301,
+        "output": 1265,
+        "cacheRead": 22016,
+        "cacheWrite": 0,
+        "total": 39582
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": true,
+        "claim_status": "verified",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 54401
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "independent-confirmation",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 7,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 1,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 18305,
+        "output": 1903,
+        "cacheRead": 37120,
+        "cacheWrite": 0,
+        "total": 57328
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": true,
+        "claim_status": "verified",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 86499
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "independent-confirmation",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 6,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 2,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 9957,
+        "output": 1366,
+        "cacheRead": 37504,
+        "cacheWrite": 0,
+        "total": 48827
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": true,
+        "claim_status": "verified",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 62189
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "independent-confirmation",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 8,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 2,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 16556,
+        "output": 1897,
+        "cacheRead": 49536,
+        "cacheWrite": 0,
+        "total": 67989
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": true,
+        "claim_status": "verified",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 76122
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "official-current",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 7,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 0,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 11268,
+        "output": 1472,
+        "cacheRead": 51968,
+        "cacheWrite": 0,
+        "total": 64708
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": "30 days",
+        "claim_status": "verified",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 93332
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "official-current",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 6,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 0,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 26108,
+        "output": 1615,
+        "cacheRead": 26112,
+        "cacheWrite": 0,
+        "total": 53835
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": "30 days",
+        "claim_status": "verified",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 97989
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "official-current",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 5,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 1,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 9541,
+        "output": 1214,
+        "cacheRead": 28416,
+        "cacheWrite": 0,
+        "total": 39171
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": "30 days",
+        "claim_status": "verified",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 72809
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "official-current",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 12,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 1,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 12445,
+        "output": 2717,
+        "cacheRead": 93696,
+        "cacheWrite": 0,
+        "total": 108858
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": "30 days",
+        "claim_status": "verified",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 149378
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "official-current",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 6,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 2,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 17550,
+        "output": 1144,
+        "cacheRead": 27904,
+        "cacheWrite": 0,
+        "total": 46598
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": "30 days",
+        "claim_status": "verified",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 52372
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "official-current",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 7,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 2,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 18660,
+        "output": 1784,
+        "cacheRead": 37248,
+        "cacheWrite": 0,
+        "total": 57692
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": "30 days",
+        "claim_status": "verified",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 82785
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "quote-context",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 8,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 0,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 9445,
+        "output": 1733,
+        "cacheRead": 48640,
+        "cacheWrite": 0,
+        "total": 59818
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": false,
+        "claim_status": "refuted",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 150200
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "quote-context",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 8,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 0,
+      "score": 1.0,
+      "target_skill_read": false,
+      "usage": {
+        "input": 9072,
+        "output": 1687,
+        "cacheRead": 48640,
+        "cacheWrite": 0,
+        "total": 59399
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": false,
+        "claim_status": "refuted",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 175829
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "quote-context",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 6,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 1,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 17464,
+        "output": 1164,
+        "cacheRead": 28032,
+        "cacheWrite": 0,
+        "total": 46660
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": false,
+        "claim_status": "refuted",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 46556
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "quote-context",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 12,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 1,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 11539,
+        "output": 2046,
+        "cacheRead": 91264,
+        "cacheWrite": 0,
+        "total": 104849
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": false,
+        "claim_status": "refuted",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 97960
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "quote-context",
+      "checks": {
+        "answer": true,
+        "claim_status": false,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 6,
+      "passed": false,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 2,
+      "score": 0.875,
+      "target_skill_read": true,
+      "usage": {
+        "input": 17574,
+        "output": 1264,
+        "cacheRead": 28160,
+        "cacheWrite": 0,
+        "total": 46998
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": false,
+        "claim_status": "verified",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 57589
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "quote-context",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 7,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 2,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 10358,
+        "output": 1567,
+        "cacheRead": 43776,
+        "cacheWrite": 0,
+        "total": 55701
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": false,
+        "claim_status": "refuted",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 68304
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "retracted-study",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 5,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 0,
+      "score": 1.0,
+      "target_skill_read": false,
+      "usage": {
+        "input": 18332,
+        "output": 1397,
+        "cacheRead": 19840,
+        "cacheWrite": 0,
+        "total": 39569
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": false,
+        "claim_status": "refuted",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 52497
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "retracted-study",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 6,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 0,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 17755,
+        "output": 1718,
+        "cacheRead": 28288,
+        "cacheWrite": 0,
+        "total": 47761
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": false,
+        "claim_status": "refuted",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 68350
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "retracted-study",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 5,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 1,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 18446,
+        "output": 1386,
+        "cacheRead": 20096,
+        "cacheWrite": 0,
+        "total": 39928
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": false,
+        "claim_status": "refuted",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 61523
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "retracted-study",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 7,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 1,
+      "score": 1.0,
+      "target_skill_read": false,
+      "usage": {
+        "input": 10889,
+        "output": 1716,
+        "cacheRead": 46464,
+        "cacheWrite": 0,
+        "total": 59069
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": false,
+        "claim_status": "refuted",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 78392
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "retracted-study",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 6,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 2,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 10136,
+        "output": 1606,
+        "cacheRead": 37888,
+        "cacheWrite": 0,
+        "total": 49630
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": false,
+        "claim_status": "refuted",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 69240
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "retracted-study",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 7,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 2,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 18341,
+        "output": 1666,
+        "cacheRead": 36864,
+        "cacheWrite": 0,
+        "total": 56871
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": false,
+        "claim_status": "refuted",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 75613
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "scope-limitation",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 6,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 0,
+      "score": 1.0,
+      "target_skill_read": false,
+      "usage": {
+        "input": 4239,
+        "output": 1140,
+        "cacheRead": 34048,
+        "cacheWrite": 0,
+        "total": 39427
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": false,
+        "claim_status": "refuted",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 61419
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "scope-limitation",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 7,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 0,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 17417,
+        "output": 1634,
+        "cacheRead": 37760,
+        "cacheWrite": 0,
+        "total": 56811
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": false,
+        "claim_status": "refuted",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 73255
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "scope-limitation",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 6,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 1,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 9786,
+        "output": 1224,
+        "cacheRead": 35840,
+        "cacheWrite": 0,
+        "total": 46850
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": false,
+        "claim_status": "refuted",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 49021
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "scope-limitation",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 7,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 1,
+      "score": 1.0,
+      "target_skill_read": false,
+      "usage": {
+        "input": 20148,
+        "output": 1611,
+        "cacheRead": 36224,
+        "cacheWrite": 0,
+        "total": 57983
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": false,
+        "claim_status": "refuted",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 68445
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "scope-limitation",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 6,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 2,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 9883,
+        "output": 1270,
+        "cacheRead": 35840,
+        "cacheWrite": 0,
+        "total": 46993
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": false,
+        "claim_status": "refuted",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 59889
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "scope-limitation",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 7,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 2,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 21008,
+        "output": 2076,
+        "cacheRead": 36224,
+        "cacheWrite": 0,
+        "total": 59308
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": false,
+        "claim_status": "refuted",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 88070
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "shared-dataset",
+      "checks": {
+        "answer": true,
+        "claim_status": false,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 6,
+      "passed": false,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 0,
+      "score": 0.875,
+      "target_skill_read": true,
+      "usage": {
+        "input": 16414,
+        "output": 1351,
+        "cacheRead": 29440,
+        "cacheWrite": 0,
+        "total": 47205
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": false,
+        "claim_status": "refuted",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 55445
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "shared-dataset",
+      "checks": {
+        "answer": true,
+        "claim_status": false,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 7,
+      "passed": false,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 0,
+      "score": 0.875,
+      "target_skill_read": true,
+      "usage": {
+        "input": 19089,
+        "output": 1999,
+        "cacheRead": 38272,
+        "cacheWrite": 0,
+        "total": 59360
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": false,
+        "claim_status": "refuted",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 82192
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "shared-dataset",
+      "checks": {
+        "answer": true,
+        "claim_status": false,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 8,
+      "passed": false,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 1,
+      "score": 0.875,
+      "target_skill_read": true,
+      "usage": {
+        "input": 19491,
+        "output": 1553,
+        "cacheRead": 44800,
+        "cacheWrite": 0,
+        "total": 65844
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": false,
+        "claim_status": "refuted",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 72223
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "shared-dataset",
+      "checks": {
+        "answer": true,
+        "claim_status": false,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 8,
+      "passed": false,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 1,
+      "score": 0.875,
+      "target_skill_read": true,
+      "usage": {
+        "input": 11063,
+        "output": 1988,
+        "cacheRead": 52864,
+        "cacheWrite": 0,
+        "total": 65915
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": false,
+        "claim_status": "refuted",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 84548
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "shared-dataset",
+      "checks": {
+        "answer": true,
+        "claim_status": false,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 5,
+      "passed": false,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 2,
+      "score": 0.875,
+      "target_skill_read": true,
+      "usage": {
+        "input": 9717,
+        "output": 1341,
+        "cacheRead": 28800,
+        "cacheWrite": 0,
+        "total": 39858
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": false,
+        "claim_status": "refuted",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 59530
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "shared-dataset",
+      "checks": {
+        "answer": true,
+        "claim_status": false,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 7,
+      "passed": false,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 2,
+      "score": 0.875,
+      "target_skill_read": false,
+      "usage": {
+        "input": 11226,
+        "output": 1997,
+        "cacheRead": 46848,
+        "cacheWrite": 0,
+        "total": 60071
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": false,
+        "claim_status": "refuted",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 84009
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "syndicated-origin",
+      "checks": {
+        "answer": true,
+        "claim_status": false,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": false,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 6,
+      "passed": false,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 0,
+      "score": 0.75,
+      "target_skill_read": true,
+      "usage": {
+        "input": 18532,
+        "output": 1291,
+        "cacheRead": 27264,
+        "cacheWrite": 0,
+        "total": 47087
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": false,
+        "claim_status": "refuted",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 58518
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "syndicated-origin",
+      "checks": {
+        "answer": true,
+        "claim_status": false,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": false,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 8,
+      "passed": false,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 0,
+      "score": 0.75,
+      "target_skill_read": true,
+      "usage": {
+        "input": 10795,
+        "output": 1908,
+        "cacheRead": 51840,
+        "cacheWrite": 0,
+        "total": 64543
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": false,
+        "claim_status": "refuted",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 84883
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "syndicated-origin",
+      "checks": {
+        "answer": true,
+        "claim_status": false,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": false,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 5,
+      "passed": false,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 1,
+      "score": 0.75,
+      "target_skill_read": false,
+      "usage": {
+        "input": 16194,
+        "output": 1176,
+        "cacheRead": 21760,
+        "cacheWrite": 0,
+        "total": 39130
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": false,
+        "claim_status": "refuted",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 50371
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "syndicated-origin",
+      "checks": {
+        "answer": true,
+        "claim_status": false,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": false,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 7,
+      "passed": false,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 1,
+      "score": 0.75,
+      "target_skill_read": true,
+      "usage": {
+        "input": 25875,
+        "output": 1890,
+        "cacheRead": 31232,
+        "cacheWrite": 0,
+        "total": 58997
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": false,
+        "claim_status": "refuted",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 82446
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "syndicated-origin",
+      "checks": {
+        "answer": true,
+        "claim_status": false,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": false,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 7,
+      "passed": false,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 2,
+      "score": 0.75,
+      "target_skill_read": true,
+      "usage": {
+        "input": 19443,
+        "output": 1655,
+        "cacheRead": 38016,
+        "cacheWrite": 0,
+        "total": 59114
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": false,
+        "claim_status": "refuted",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 72477
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "syndicated-origin",
+      "checks": {
+        "answer": true,
+        "claim_status": false,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": false,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 7,
+      "passed": false,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 2,
+      "score": 0.75,
+      "target_skill_read": true,
+      "usage": {
+        "input": 11099,
+        "output": 1987,
+        "cacheRead": 46336,
+        "cacheWrite": 0,
+        "total": 59422
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": false,
+        "claim_status": "refuted",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 80840
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "undated-current",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 6,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 0,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 17146,
+        "output": 1027,
+        "cacheRead": 27776,
+        "cacheWrite": 0,
+        "total": 45949
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": null,
+        "claim_status": "unverified",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": true,
+        "causal_claim": false
+      },
+      "wall_ms": 52063
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "undated-current",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 12,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 0,
+      "score": 1.0,
+      "target_skill_read": false,
+      "usage": {
+        "input": 23701,
+        "output": 2134,
+        "cacheRead": 85376,
+        "cacheWrite": 0,
+        "total": 111211
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": null,
+        "claim_status": "unverified",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": true,
+        "causal_claim": false
+      },
+      "wall_ms": 111912
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "undated-current",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 6,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 1,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 15960,
+        "output": 1004,
+        "cacheRead": 28928,
+        "cacheWrite": 0,
+        "total": 45892
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": null,
+        "claim_status": "unverified",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": true,
+        "causal_claim": false
+      },
+      "wall_ms": 49345
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "undated-current",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 13,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 1,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 24157,
+        "output": 2450,
+        "cacheRead": 94336,
+        "cacheWrite": 0,
+        "total": 120943
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": null,
+        "claim_status": "unverified",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": true,
+        "causal_claim": false
+      },
+      "wall_ms": 117970
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "undated-current",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 6,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 2,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 17888,
+        "output": 1066,
+        "cacheRead": 27136,
+        "cacheWrite": 0,
+        "total": 46090
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": null,
+        "claim_status": "unverified",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": true,
+        "causal_claim": false
+      },
+      "wall_ms": 51458
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "undated-current",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 12,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 2,
+      "score": 1.0,
+      "target_skill_read": false,
+      "usage": {
+        "input": 12668,
+        "output": 1916,
+        "cacheRead": 94848,
+        "cacheWrite": 0,
+        "total": 109432
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": null,
+        "claim_status": "unverified",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": true,
+        "causal_claim": false
+      },
+      "wall_ms": 95507
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "unit-equivalence",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 5,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 0,
+      "score": 1.0,
+      "target_skill_read": false,
+      "usage": {
+        "input": 9286,
+        "output": 988,
+        "cacheRead": 28032,
+        "cacheWrite": 0,
+        "total": 38306
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": true,
+        "claim_status": "verified",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 46730
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "unit-equivalence",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 9,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 0,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 19042,
+        "output": 1742,
+        "cacheRead": 53504,
+        "cacheWrite": 0,
+        "total": 74288
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": true,
+        "claim_status": "verified",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 87277
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "unit-equivalence",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 6,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 1,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 17099,
+        "output": 974,
+        "cacheRead": 27776,
+        "cacheWrite": 0,
+        "total": 45849
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": true,
+        "claim_status": "verified",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 57293
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "unit-equivalence",
+      "checks": {
+        "answer": true,
+        "claim_status": false,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 6,
+      "passed": false,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 1,
+      "score": 0.875,
+      "target_skill_read": true,
+      "usage": {
+        "input": 20554,
+        "output": 1545,
+        "cacheRead": 30976,
+        "cacheWrite": 0,
+        "total": 53075
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": true,
+        "claim_status": "inference",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 68983
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "unit-equivalence",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 6,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 2,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 17840,
+        "output": 1020,
+        "cacheRead": 27136,
+        "cacheWrite": 0,
+        "total": 45996
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": true,
+        "claim_status": "verified",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 43909
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "unit-equivalence",
+      "checks": {
+        "answer": true,
+        "claim_status": false,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 7,
+      "passed": false,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 2,
+      "score": 0.875,
+      "target_skill_read": true,
+      "usage": {
+        "input": 17632,
+        "output": 1444,
+        "cacheRead": 35840,
+        "cacheWrite": 0,
+        "total": 54916
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": true,
+        "claim_status": "inference",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 57037
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "unresolved-conflict",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 5,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 0,
+      "score": 1.0,
+      "target_skill_read": false,
+      "usage": {
+        "input": 9553,
+        "output": 1206,
+        "cacheRead": 28416,
+        "cacheWrite": 0,
+        "total": 39175
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": null,
+        "claim_status": "conflicted",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": false
+      },
+      "wall_ms": 52502
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "unresolved-conflict",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 11,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 0,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 13186,
+        "output": 2427,
+        "cacheRead": 91136,
+        "cacheWrite": 0,
+        "total": 106749
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": null,
+        "claim_status": "conflicted",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": false
+      },
+      "wall_ms": 120245
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "unresolved-conflict",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 7,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 1,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 18615,
+        "output": 1366,
+        "cacheRead": 27776,
+        "cacheWrite": 0,
+        "total": 47757
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": null,
+        "claim_status": "conflicted",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": false
+      },
+      "wall_ms": 88904
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "unresolved-conflict",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 12,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 1,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 20799,
+        "output": 2257,
+        "cacheRead": 88064,
+        "cacheWrite": 0,
+        "total": 111120
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": null,
+        "claim_status": "conflicted",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": false
+      },
+      "wall_ms": 109365
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "unresolved-conflict",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 6,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 2,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 10121,
+        "output": 1498,
+        "cacheRead": 37632,
+        "cacheWrite": 0,
+        "total": 49251
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": null,
+        "claim_status": "conflicted",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": false
+      },
+      "wall_ms": 65150
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "unresolved-conflict",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 10,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 2,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 22814,
+        "output": 2110,
+        "cacheRead": 64768,
+        "cacheWrite": 0,
+        "total": 89692
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": null,
+        "claim_status": "conflicted",
+        "source_ids": [
+          "S001",
+          "S002"
+        ],
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": false
+      },
+      "wall_ms": 106548
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "unsupported-rumor",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 5,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 0,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 9366,
+        "output": 1076,
+        "cacheRead": 28288,
+        "cacheWrite": 0,
+        "total": 38730
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": null,
+        "claim_status": "unverified",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": true,
+        "causal_claim": false
+      },
+      "wall_ms": 51277
+    },
+    {
+      "agent_audit_passed": false,
+      "arm": "control",
+      "artifact_audit_passed": false,
+      "case": "unsupported-rumor",
+      "checks": {
+        "answer": false,
+        "claim_status": false,
+        "source_ids": false,
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false,
+        "artifact_contract": false,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 6,
+      "passed": false,
+      "provider": "openai",
+      "reasoning": null,
+      "repetition": 0,
+      "score": 0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 17195,
+        "output": 1644,
+        "cacheRead": 19712,
+        "cacheWrite": 0,
+        "total": 38551
+      },
+      "valid_runtime": false,
+      "value": null,
+      "wall_ms": 68804
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "unsupported-rumor",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 6,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 1,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 14868,
+        "output": 1092,
+        "cacheRead": 30208,
+        "cacheWrite": 0,
+        "total": 46168
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": null,
+        "claim_status": "unverified",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": true,
+        "causal_claim": false
+      },
+      "wall_ms": 51002
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "unsupported-rumor",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 12,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 1,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 12450,
+        "output": 2566,
+        "cacheRead": 91904,
+        "cacheWrite": 0,
+        "total": 106920
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": null,
+        "claim_status": "unverified",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": true,
+        "causal_claim": false
+      },
+      "wall_ms": 98105
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "unsupported-rumor",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 6,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 2,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 25823,
+        "output": 1234,
+        "cacheRead": 19456,
+        "cacheWrite": 0,
+        "total": 46513
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": null,
+        "claim_status": "unverified",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": true,
+        "causal_claim": false
+      },
+      "wall_ms": 51633
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "unsupported-rumor",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": false,
+      "model": "gpt-5.6-sol",
+      "model_calls": 9,
+      "passed": true,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 2,
+      "score": 1.0,
+      "target_skill_read": true,
+      "usage": {
+        "input": 22143,
+        "output": 1877,
+        "cacheRead": 56704,
+        "cacheWrite": 0,
+        "total": 80724
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": null,
+        "claim_status": "unverified",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": true,
+        "causal_claim": false
+      },
+      "wall_ms": 89042
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "vendor-superlative",
+      "checks": {
+        "answer": false,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 5,
+      "passed": false,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 0,
+      "score": 0.875,
+      "target_skill_read": false,
+      "usage": {
+        "input": 9281,
+        "output": 1003,
+        "cacheRead": 28032,
+        "cacheWrite": 0,
+        "total": 38316
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": null,
+        "claim_status": "unverified",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": true,
+        "causal_claim": false
+      },
+      "wall_ms": 42000
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "vendor-superlative",
+      "checks": {
+        "answer": false,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 10,
+      "passed": false,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 0,
+      "score": 0.875,
+      "target_skill_read": false,
+      "usage": {
+        "input": 17542,
+        "output": 1834,
+        "cacheRead": 69760,
+        "cacheWrite": 0,
+        "total": 89136
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": null,
+        "claim_status": "unverified",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": true,
+        "causal_claim": false
+      },
+      "wall_ms": 79730
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "vendor-superlative",
+      "checks": {
+        "answer": false,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 6,
+      "passed": false,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 1,
+      "score": 0.875,
+      "target_skill_read": false,
+      "usage": {
+        "input": 17419,
+        "output": 1152,
+        "cacheRead": 28928,
+        "cacheWrite": 0,
+        "total": 47499
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": null,
+        "claim_status": "unverified",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": true,
+        "causal_claim": false
+      },
+      "wall_ms": 54916
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "vendor-superlative",
+      "checks": {
+        "answer": true,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": false,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 12,
+      "passed": false,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 1,
+      "score": 0.875,
+      "target_skill_read": true,
+      "usage": {
+        "input": 12783,
+        "output": 2019,
+        "cacheRead": 93824,
+        "cacheWrite": 0,
+        "total": 108626
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": false,
+        "claim_status": "unverified",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": false,
+        "causal_claim": false
+      },
+      "wall_ms": 92262
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "candidate",
+      "artifact_audit_passed": true,
+      "case": "vendor-superlative",
+      "checks": {
+        "answer": false,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 7,
+      "passed": false,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 2,
+      "score": 0.875,
+      "target_skill_read": false,
+      "usage": {
+        "input": 18122,
+        "output": 997,
+        "cacheRead": 35072,
+        "cacheWrite": 0,
+        "total": 54191
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": null,
+        "claim_status": "unverified",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": true,
+        "causal_claim": false
+      },
+      "wall_ms": 49660
+    },
+    {
+      "agent_audit_passed": true,
+      "arm": "control",
+      "artifact_audit_passed": true,
+      "case": "vendor-superlative",
+      "checks": {
+        "answer": false,
+        "claim_status": true,
+        "source_ids": true,
+        "contradiction_disclosed": true,
+        "abstained": true,
+        "causal_claim": true,
+        "artifact_contract": true,
+        "sources_preserved": true
+      },
+      "heldout": true,
+      "model": "gpt-5.6-sol",
+      "model_calls": 10,
+      "passed": false,
+      "provider": "openai",
+      "reasoning": "low",
+      "repetition": 2,
+      "score": 0.875,
+      "target_skill_read": true,
+      "usage": {
+        "input": 21072,
+        "output": 1858,
+        "cacheRead": 64768,
+        "cacheWrite": 0,
+        "total": 87698
+      },
+      "valid_runtime": true,
+      "value": {
+        "answer": null,
+        "claim_status": "unverified",
+        "source_ids": [
+          "S001"
+        ],
+        "contradiction_disclosed": false,
+        "abstained": true,
+        "causal_claim": false
+      },
+      "wall_ms": 87118
+    }
+  ]
+}

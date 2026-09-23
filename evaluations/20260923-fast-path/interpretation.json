@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "review": "Post-run, non-blinded maintainer review; original strict scores are unchanged.",
+  "acceptance": {
+    "accepted": true,
+    "reasons": [
+      "Candidate artifact audit passed on every runtime-valid attempt (60/60).",
+      "Source fixtures were preserved on every candidate attempt (60/60).",
+      "All 60 candidate central answers were substantively acceptable in post-run review.",
+      "Median wall time, mean total tokens and mean model calls all improved by more than 30 percent."
+    ]
+  },
+  "control": {
+    "attempts": 60,
+    "valid_runtime": 59,
+    "strict_passed": 40,
+    "substantively_acceptable_central_answer_valid_runtime": 59,
+    "invalid_runtime": 1
+  },
+  "candidate": {
+    "attempts": 60,
+    "valid_runtime": 60,
+    "strict_passed": 41,
+    "strict_failed_valid_runtime": 19,
+    "substantively_acceptable_central_answer_valid_runtime": 60,
+    "substantive_central_answer_failures_valid_runtime": 0,
+    "artifact_audit_passed": 60
+  },
+  "candidate_strict_failure_review": [
+    {
+      "case": "absence-not-never",
+      "repetitions": [0, 1, 2],
+      "classification": "representation_or_rubric_ambiguity",
+      "reason": "The answer correctly rejects the claim that a bounded register proves no outage ever; refuted/not-abstained and the gold unverified/abstained encode the same practical conclusion."
+    },
+    {
+      "case": "corrected-number",
+      "repetitions": [1, 2],
+      "classification": "representation_or_rubric_ambiguity",
+      "reason": "The corrected value 41 and both records were used; the candidate conservatively disclosed the superseded value while gold did not classify it as an unresolved contradiction."
+    },
+    {
+      "case": "denominator",
+      "repetitions": [0, 1, 2],
+      "classification": "representation_or_rubric_ambiguity",
+      "reason": "The computed result is 80 percent in every run; one response emitted numeric 80 instead of the string 80%, and all three labeled arithmetic as inference rather than verified."
+    },
+    {
+      "case": "different-definitions",
+      "repetitions": [1],
+      "classification": "representation_or_rubric_ambiguity",
+      "reason": "The candidate correctly abstained because definitions differ, but used inference where gold used unverified."
+    },
+    {
+      "case": "quote-context",
+      "repetitions": [2],
+      "classification": "representation_or_rubric_ambiguity",
+      "reason": "The answer correctly says the device is not approved; verified-false and refuted encode the same conclusion here."
+    },
+    {
+      "case": "shared-dataset",
+      "repetitions": [0, 1, 2],
+      "classification": "representation_or_rubric_ambiguity",
+      "reason": "The candidate correctly rejects independent verification because both analyses use Dataset Z; the mismatch is the status applied to the negative answer."
+    },
+    {
+      "case": "syndicated-origin",
+      "repetitions": [0, 1, 2],
+      "classification": "representation_or_rubric_ambiguity",
+      "reason": "The candidate correctly rejects independent verification and identifies both documents; the strict mismatch concerns status and abstention representation."
+    },
+    {
+      "case": "vendor-superlative",
+      "repetitions": [0, 1, 2],
+      "classification": "representation_or_rubric_ambiguity",
+      "reason": "The candidate consistently abstained with null because no comparative evidence exists; the frozen gold expected false plus abstention."
+    }
+  ],
+  "control_runtime_failure": {
+    "case": "unsupported-rumor",
+    "repetition": 0,
+    "reason": "The ChatGPT subscription returned a usage-limit error. The attempt remains invalid, scored zero and was not rerun."
+  },
+  "limit": "This review explains strict mismatches; it is not a blinded evaluator or an independent factuality assessment."
+}
