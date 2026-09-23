@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "repository": "research-verifier",
+  "files": [
+    {
+      "repository": "skill-forge",
+      "revision": "e6db2b903f12a73f9ae1dc39e6cdf45950045613",
+      "source": "core/lifecycle.py",
+      "destination": "scripts/lifecycle.py",
+      "sha256": "ac8cbff38618343714434ed346fede2c671ab30b470148446b88f894070e28fa"
+    },
+    {
+      "repository": "skill-forge",
+      "revision": "e6db2b903f12a73f9ae1dc39e6cdf45950045613",
+      "source": "core/vendor.py",
+      "destination": "scripts/vendor.py",
+      "sha256": "f1ce4fa8ac6012cef6e4850410c1a0504a42fc13b295dd39d50ab9e94bee8506"
+    }
+  ]
+}

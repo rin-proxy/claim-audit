@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Research Verifier Final Audit",
+  "type": "object",
+  "required": ["schema", "passed", "claims", "sources", "unsupported_claims", "conflicted_claims", "errors", "limit"],
+  "properties": {
+    "schema": {"const": 1},
+    "passed": {"type": "boolean"},
+    "errors": {"type": "array", "items": {"type": "string"}}
+  }
+}

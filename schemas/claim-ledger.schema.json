@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Research Verifier Claim Ledger",
+  "type": "object",
+  "required": ["schema", "claims"],
+  "properties": {
+    "schema": {"const": 1},
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "text", "kind", "status", "citations", "evidence"],
+        "properties": {
+          "id": {"pattern": "^C[0-9]{3,}$"},
+          "text": {"type": "string", "minLength": 1},
+          "kind": {"enum": ["fact", "current_fact", "number", "inference", "opinion"]},
+          "status": {"enum": ["verified", "supported", "inference", "conflicted", "unverified", "refuted"]},
+          "checked_at": {"type": "string"},
+          "citations": {"type": "array", "items": {"pattern": "^S[0-9]{3,}$"}, "uniqueItems": true},
+          "evidence": {"type": "array"}
+        }
+      }
+    }
+  }
+}

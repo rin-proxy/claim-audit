@@ -1,0 +1,21 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Research Verifier Contradictions",
+  "type": "object",
+  "required": ["schema", "contradictions"],
+  "properties": {
+    "schema": {"const": 1},
+    "contradictions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "claim_ids", "source_ids", "summary", "resolution_status", "disclosed_in_report"],
+        "properties": {
+          "id": {"pattern": "^X[0-9]{3,}$"},
+          "resolution_status": {"enum": ["resolved", "unresolved"]},
+          "disclosed_in_report": {"const": true}
+        }
+      }
+    }
+  }
+}

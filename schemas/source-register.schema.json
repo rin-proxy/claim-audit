@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Research Verifier Source Register",
+  "type": "object",
+  "required": ["schema", "sources"],
+  "properties": {
+    "schema": {"const": 1},
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "url", "title", "publisher", "source_type", "independent_group", "retrieved", "accessed_at"],
+        "properties": {
+          "id": {"pattern": "^S[0-9]{3,}$"},
+          "url": {"type": "string", "pattern": "^https://"},
+          "source_type": {"enum": ["official", "primary", "peer_reviewed", "preprint", "independent_reporting", "community", "opinion"]},
+          "retrieved": {"const": true}
+        }
+      }
+    }
+  }
+}
