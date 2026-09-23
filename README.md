@@ -160,7 +160,13 @@ The isolated 120-attempt comparison produced a passing structural artifact audit
 runtime-valid after attempts and 0/59 baseline attempts. It did not demonstrate a central-answer
 accuracy gain on the small synthetic fixtures, where both arms' substantive answers were already
 strong. Median wall time increased from 37.76 to 84.75 seconds and mean token use increased from
-29,163 to 77,035. Read the [full benchmark](BENCHMARK.md) before choosing Standard mode by default.
+29,163 to 77,035 in the initial 1.0 evaluation.
+
+The follow-up 1.1 comparison kept candidate artifact audits and source preservation at 60/60 while
+reducing median Standard wall time from 82.79 to 54.66 seconds, mean total tokens from 73,520 to
+46,129 and mean model calls from 8.54 to 5.87 versus the 1.0 control. Read the
+[full benchmark](BENCHMARK.md) for strict-score interpretation, the retained quota failure and
+reproduction limits.
 
 ## Limits
 
