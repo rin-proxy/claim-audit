@@ -39,6 +39,38 @@ or `opinion`), status, citation IDs, and evidence records. Evidence records cont
 The ledger is a review aid, not hidden chain-of-thought. Record externally inspectable evidence and
 brief rationale only.
 
+Use these exact field names; the validators intentionally reject aliases such as `claim_id`,
+`source_id` at the source-record level, `citation_ids`, `type`, `published`, or `retrieved_at`:
+
+```json
+{
+  "schema": 1,
+  "sources": [{
+    "id": "S001", "url": "https://example.test/source", "title": "Source title",
+    "publisher": "Publisher", "source_type": "official", "independent_group": "origin-a",
+    "retrieved": true, "accessed_at": "2026-09-23T00:00:00Z"
+  }]
+}
+```
+
+```json
+{
+  "schema": 1,
+  "claims": [{
+    "id": "C001", "text": "Bounded factual claim.", "kind": "fact",
+    "status": "verified", "citations": ["S001"],
+    "evidence": [{
+      "source_id": "S001", "relation": "supports",
+      "locator": "Section 2", "excerpt": "Short supporting passage."
+    }]
+  }]
+}
+```
+
+When a conflict exists, use `{"schema":1,"contradictions":[{"id":"X001",
+"claim_ids":["C001"],"source_ids":["S001","S002"],"summary":"Exact disagreement",
+"resolution_status":"unresolved","disclosed_in_report":true}]}`. Otherwise keep the array empty.
+
 ## Completion
 
 Research is complete when every material claim has an honest status, every citation resolves to a
