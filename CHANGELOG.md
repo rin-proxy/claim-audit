@@ -7,6 +7,7 @@
 - Add hash-guarded managed repair that preserves unrelated files.
 - Tighten Quick/Standard/Deep routing, source budgets and stop conditions.
 - Keep the full protocol as Deep/manual recovery rather than loading it for routine Standard work.
+- Publish the frozen 120-attempt 1.0 versus 1.1 efficiency evaluation and acceptance review.
 
 ## 1.0.0 — 2026-09-23
 

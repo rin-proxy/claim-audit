@@ -6,8 +6,9 @@ before replacing managed artifacts and preserves unrelated owner files.
 
 Routing now favors Quick for a narrow low-risk official lookup, caps the initial Standard source
 budget at three independent evidence families, and stops repeated-origin searching. Deep research
-retains the complete manual protocol. Model efficiency evidence is published separately after the
-same-case comparison completes; static tests alone do not establish a speedup.
+retains the complete manual protocol. In the published same-case comparison, the candidate retained
+60/60 artifact audits and source preservation while reducing median wall time by 34.0%, mean total
+tokens by 37.3% and mean model calls by 31.3%. See `BENCHMARK.md` for the protocol and limits.
 
 ## 1.0.0
 
