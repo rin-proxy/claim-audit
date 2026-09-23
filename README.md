@@ -4,7 +4,7 @@ Turn external research into an inspectable claim-and-source record before presen
 The skill distinguishes evidence, inference, unresolved conflict and missing support; its validators
 check structure and citation linkage without pretending to determine real-world truth.
 
-Navigation: [When to use it](#when-to-use-it) · [Expected result](#expected-result) · [Quick start](#quick-start) · [OpenClaw use](#using-it-from-openclaw) · [Artifacts](#artifacts-and-completion) · [Commands](#commands) · [Install](#install-and-verify) · [Recovery](#update-rollback-and-remove) · [Validation](#validation) · [Limits](#limits) · [Integration](#integration)
+Navigation: [When to use it](#when-to-use-it) · [Expected result](#expected-result) · [Quick start](#quick-start) · [OpenClaw use](#using-it-from-openclaw) · [Artifacts](#artifacts-and-completion) · [Commands](#commands) · [Install](#install-and-verify) · [Recovery](#update-rollback-and-remove) · [Validation](#validation) · [Measured evidence](#measured-evidence) · [Limits](#limits) · [Integration](#integration)
 
 ## When to use it
 
@@ -132,6 +132,14 @@ python3 scripts/check-docs.py
 These commands run provider-free unit, lifecycle, provenance, syntax and documentation checks.
 [VERIFICATION.md](VERIFICATION.md) defines functional and isolated model acceptance. Measured behavior,
 source pins and known limits are recorded in [BENCHMARK.md](BENCHMARK.md).
+
+## Measured evidence
+
+The isolated 120-attempt comparison produced a passing structural artifact audit in 58/58
+runtime-valid after attempts and 0/59 baseline attempts. It did not demonstrate a central-answer
+accuracy gain on the small synthetic fixtures, where both arms' substantive answers were already
+strong. Median wall time increased from 37.76 to 84.75 seconds and mean token use increased from
+29,163 to 77,035. Read the [full benchmark](BENCHMARK.md) before choosing Standard mode by default.
 
 ## Limits
 

@@ -6,3 +6,5 @@
 - Add claim, source, contradiction and report audit contracts.
 - Add deterministic validators, schemas, negative fixtures and lifecycle checks.
 - Add bounded sub-agent policy and explicit accuracy limits.
+- Publish the complete 120-attempt isolated evaluation with strict scores, runtime failures,
+  post-run interpretation and cost measurements.

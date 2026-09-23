@@ -1,0 +1,405 @@
+{
+  "cases": [
+    {
+      "expected": {
+        "abstained": false,
+        "answer": "30 days",
+        "causal_claim": false,
+        "claim_status": "verified",
+        "contradiction_disclosed": false,
+        "source_ids": [
+          "S001"
+        ]
+      },
+      "files": {
+        "sources/S001.md": "ID: S001\nURL: https://fixtures.example/s001\nTitle: Current retention specification\nPublisher: Example Authority\nType: official\nIndependent group: authority-policy\nPublished: 2026-09-01\n\nThe current retention period is 30 days.\n",
+        "sources/S002.md": "ID: S002\nURL: https://fixtures.example/s002\nTitle: Older retention guide\nPublisher: Example Blog\nType: community\nIndependent group: blog-2025\nPublished: 2025-01-02\n\nThe retention period was 45 days in 2025.\n"
+      },
+      "heldout": false,
+      "id": "official-current",
+      "question": "What is the current retention period?",
+      "timeout_seconds": 180
+    },
+    {
+      "expected": {
+        "abstained": false,
+        "answer": "4.2",
+        "causal_claim": false,
+        "claim_status": "verified",
+        "contradiction_disclosed": false,
+        "source_ids": [
+          "S001"
+        ]
+      },
+      "files": {
+        "sources/S001.md": "ID: S001\nURL: https://fixtures.example/s001\nTitle: Release index\nPublisher: Example Project\nType: official\nIndependent group: project-release\nPublished: 2026-09-20\n\nStable version: 4.2.\n",
+        "sources/S002.md": "ID: S002\nURL: https://fixtures.example/s002\nTitle: Install tutorial\nPublisher: Example Writer\nType: community\nIndependent group: tutorial-old\nPublished: 2025-11-10\n\nInstall version 3.9.\n"
+      },
+      "heldout": false,
+      "id": "current-version",
+      "question": "What is the current stable version?",
+      "timeout_seconds": 180
+    },
+    {
+      "expected": {
+        "abstained": true,
+        "answer": false,
+        "causal_claim": false,
+        "claim_status": "unverified",
+        "contradiction_disclosed": false,
+        "source_ids": [
+          "S001",
+          "S002"
+        ]
+      },
+      "files": {
+        "sources/S001.md": "ID: S001\nURL: https://fixtures.example/s001\nTitle: Launch reaches one million\nPublisher: Outlet A\nType: independent_reporting\nIndependent group: vendor-release\nPublished: 2026-08-01\n\nAccording to the Acme press release, the launch reached one million users.\n",
+        "sources/S002.md": "ID: S002\nURL: https://fixtures.example/s002\nTitle: One million at launch\nPublisher: Outlet B\nType: independent_reporting\nIndependent group: vendor-release\nPublished: 2026-08-01\n\nThis article republishes the Acme press release claiming one million users.\n"
+      },
+      "heldout": false,
+      "id": "syndicated-origin",
+      "question": "Do these documents independently verify that the launch reached one million users?",
+      "timeout_seconds": 180
+    },
+    {
+      "expected": {
+        "abstained": true,
+        "answer": null,
+        "causal_claim": false,
+        "claim_status": "conflicted",
+        "contradiction_disclosed": true,
+        "source_ids": [
+          "S001",
+          "S002"
+        ]
+      },
+      "files": {
+        "sources/S001.md": "ID: S001\nURL: https://fixtures.example/s001\nTitle: Lab A results\nPublisher: Lab A\nType: primary\nIndependent group: lab-a\nPublished: 2026-07-01\n\nThe measured median latency was 18 ms.\n",
+        "sources/S002.md": "ID: S002\nURL: https://fixtures.example/s002\nTitle: Lab B results\nPublisher: Lab B\nType: primary\nIndependent group: lab-b\nPublished: 2026-07-02\n\nThe measured median latency was 27 ms under the same declared setup.\n"
+      },
+      "heldout": false,
+      "id": "unresolved-conflict",
+      "question": "What was the measured latency?",
+      "timeout_seconds": 180
+    },
+    {
+      "expected": {
+        "abstained": true,
+        "answer": null,
+        "causal_claim": false,
+        "claim_status": "unverified",
+        "contradiction_disclosed": false,
+        "source_ids": [
+          "S001"
+        ]
+      },
+      "files": {
+        "sources/S001.md": "ID: S001\nURL: https://fixtures.example/s001\nTitle: Vale discussion thread\nPublisher: Anonymous Forum\nType: community\nIndependent group: forum-rumor\nPublished: 2026-09-19\n\nAn anonymous commenter says an acquisition might happen. No document or named source is provided.\n"
+      },
+      "heldout": false,
+      "id": "unsupported-rumor",
+      "question": "Has Project Vale been acquired?",
+      "timeout_seconds": 180
+    },
+    {
+      "expected": {
+        "abstained": true,
+        "answer": null,
+        "causal_claim": false,
+        "claim_status": "unverified",
+        "contradiction_disclosed": false,
+        "source_ids": [
+          "S001"
+        ]
+      },
+      "files": {
+        "sources/S001.md": "ID: S001\nURL: https://fixtures.example/s001\nTitle: Observational feature study\nPublisher: Example University\nType: peer_reviewed\nIndependent group: study-x\nPublished: 2026-03-11\n\nFeature X use was associated with lower error rates. The observational design cannot establish causation.\n"
+      },
+      "heldout": false,
+      "id": "causal-overreach",
+      "question": "Does using Feature X cause lower error rates?",
+      "timeout_seconds": 180
+    },
+    {
+      "expected": {
+        "abstained": false,
+        "answer": true,
+        "causal_claim": false,
+        "claim_status": "verified",
+        "contradiction_disclosed": false,
+        "source_ids": [
+          "S001"
+        ]
+      },
+      "files": {
+        "sources/S001.md": "ID: S001\nURL: https://fixtures.example/s001\nTitle: Binary size limit\nPublisher: Example Protocol\nType: official\nIndependent group: protocol-v2\nPublished: 2026-02-01\n\nThe maximum payload is 2048 KiB. One MiB equals 1024 KiB.\n"
+      },
+      "heldout": false,
+      "id": "unit-equivalence",
+      "question": "Is the documented limit exactly 2 MiB?",
+      "timeout_seconds": 180
+    },
+    {
+      "expected": {
+        "abstained": false,
+        "answer": "80%",
+        "causal_claim": false,
+        "claim_status": "verified",
+        "contradiction_disclosed": false,
+        "source_ids": [
+          "S001"
+        ]
+      },
+      "files": {
+        "sources/S001.md": "ID: S001\nURL: https://fixtures.example/s001\nTitle: Completion dataset\nPublisher: Example Statistics Office\nType: primary\nIndependent group: completion-data\nPublished: 2026-04-15\n\nThe full sample contained 100 participants. 80 completed the task.\n"
+      },
+      "heldout": false,
+      "id": "denominator",
+      "question": "What percentage of the full sample completed the task?",
+      "timeout_seconds": 180
+    },
+    {
+      "expected": {
+        "abstained": false,
+        "answer": false,
+        "causal_claim": false,
+        "claim_status": "refuted",
+        "contradiction_disclosed": false,
+        "source_ids": [
+          "S001",
+          "S002"
+        ]
+      },
+      "files": {
+        "sources/S001.md": "ID: S001\nURL: https://fixtures.example/s001\nTitle: Audit export documentation\nPublisher: Example Product\nType: official\nIndependent group: product-docs\nPublished: 2026-09-05\n\nAudit export is available only on the Enterprise plan.\n",
+        "sources/S002.md": "ID: S002\nURL: https://fixtures.example/s002\nTitle: Product overview\nPublisher: Example Product\nType: official\nIndependent group: product-docs\nPublished: 2026-09-05\n\nThe product is offered on Starter, Team, and Enterprise plans.\n"
+      },
+      "heldout": false,
+      "id": "scope-limitation",
+      "question": "Is audit export available on every plan?",
+      "timeout_seconds": 180
+    },
+    {
+      "expected": {
+        "abstained": false,
+        "answer": 41,
+        "causal_claim": false,
+        "claim_status": "verified",
+        "contradiction_disclosed": false,
+        "source_ids": [
+          "S002"
+        ]
+      },
+      "files": {
+        "sources/S001.md": "ID: S001\nURL: https://fixtures.example/s001\nTitle: Initial incident bulletin\nPublisher: Example Agency\nType: official\nIndependent group: agency-bulletin\nPublished: 2026-05-01\n\nInitial count: 50 incidents. Superseded by the correction dated 2026-05-03.\n",
+        "sources/S002.md": "ID: S002\nURL: https://fixtures.example/s002\nTitle: Incident bulletin correction\nPublisher: Example Agency\nType: official\nIndependent group: agency-bulletin\nPublished: 2026-05-03\n\nCorrection: the verified incident count is 41, not 50.\n"
+      },
+      "heldout": false,
+      "id": "corrected-number",
+      "question": "What is the corrected incident count?",
+      "timeout_seconds": 180
+    },
+    {
+      "expected": {
+        "abstained": false,
+        "answer": "14 days",
+        "causal_claim": false,
+        "claim_status": "verified",
+        "contradiction_disclosed": false,
+        "source_ids": [
+          "S001",
+          "S002"
+        ]
+      },
+      "files": {
+        "sources/S001.md": "ID: S001\nURL: https://fixtures.example/s001\nTitle: Current cancellation policy\nPublisher: Example Service\nType: official\nIndependent group: policy\nPublished: 2026-01-01\n\nUntil 2026-10-01, the cancellation window is 14 days.\n",
+        "sources/S002.md": "ID: S002\nURL: https://fixtures.example/s002\nTitle: Upcoming policy notice\nPublisher: Example Service\nType: official\nIndependent group: policy\nPublished: 2026-09-15\n\nStarting 2026-10-01, the cancellation window will be 7 days.\n"
+      },
+      "heldout": true,
+      "id": "future-policy",
+      "question": "As of 2026-09-23, what is the cancellation window?",
+      "timeout_seconds": 180
+    },
+    {
+      "expected": {
+        "abstained": true,
+        "answer": null,
+        "causal_claim": false,
+        "claim_status": "unverified",
+        "contradiction_disclosed": false,
+        "source_ids": [
+          "S001"
+        ]
+      },
+      "files": {
+        "sources/S001.md": "ID: S001\nURL: https://fixtures.example/s001\nTitle: API limit note\nPublisher: Unknown Maintainer\nType: community\nIndependent group: undated-note\nPublished: unknown\n\nThe API limit is 500 requests, but the note has no date or version.\n"
+      },
+      "heldout": true,
+      "id": "undated-current",
+      "question": "What is the current API limit?",
+      "timeout_seconds": 180
+    },
+    {
+      "expected": {
+        "abstained": true,
+        "answer": false,
+        "causal_claim": false,
+        "claim_status": "unverified",
+        "contradiction_disclosed": false,
+        "source_ids": [
+          "S001"
+        ]
+      },
+      "files": {
+        "sources/S001.md": "ID: S001\nURL: https://fixtures.example/s001\nTitle: Product performance announcement\nPublisher: Example Vendor\nType: official\nIndependent group: vendor-marketing\nPublished: 2026-08-20\n\nWe believe our product outperforms every competitor. No methods, comparison set, or data are supplied.\n"
+      },
+      "heldout": true,
+      "id": "vendor-superlative",
+      "question": "Is it verified that this product outperforms every competitor?",
+      "timeout_seconds": 180
+    },
+    {
+      "expected": {
+        "abstained": false,
+        "answer": true,
+        "causal_claim": false,
+        "claim_status": "verified",
+        "contradiction_disclosed": false,
+        "source_ids": [
+          "S001",
+          "S002"
+        ]
+      },
+      "files": {
+        "sources/S001.md": "ID: S001\nURL: https://fixtures.example/s001\nTitle: Summit municipal permit\nPublisher: Example City\nType: primary\nIndependent group: city-record\nPublished: 2026-06-13\n\nThe permitted summit occurred on 12 June 2026.\n",
+        "sources/S002.md": "ID: S002\nURL: https://fixtures.example/s002\nTitle: Summit attendance report\nPublisher: Independent Observer\nType: independent_reporting\nIndependent group: observer-report\nPublished: 2026-06-14\n\nOur reporter attended the summit on 12 June 2026.\n"
+      },
+      "heldout": true,
+      "id": "independent-confirmation",
+      "question": "Was the synthetic summit held on 12 June 2026?",
+      "timeout_seconds": 180
+    },
+    {
+      "expected": {
+        "abstained": false,
+        "answer": false,
+        "causal_claim": false,
+        "claim_status": "supported",
+        "contradiction_disclosed": false,
+        "source_ids": [
+          "S001",
+          "S002"
+        ]
+      },
+      "files": {
+        "sources/S001.md": "ID: S001\nURL: https://fixtures.example/s001\nTitle: Analysis A\nPublisher: Research Group A\nType: peer_reviewed\nIndependent group: dataset-z\nPublished: 2026-03-01\n\nAnalysis of Dataset Z reports a 12% improvement.\n",
+        "sources/S002.md": "ID: S002\nURL: https://fixtures.example/s002\nTitle: Analysis B\nPublisher: Research Group B\nType: peer_reviewed\nIndependent group: dataset-z\nPublished: 2026-04-01\n\nA reanalysis of the same Dataset Z reports a 12% improvement.\n"
+      },
+      "heldout": true,
+      "id": "shared-dataset",
+      "question": "Do the two analyses independently verify a 12% improvement?",
+      "timeout_seconds": 180
+    },
+    {
+      "expected": {
+        "abstained": false,
+        "answer": false,
+        "causal_claim": false,
+        "claim_status": "refuted",
+        "contradiction_disclosed": false,
+        "source_ids": [
+          "S001"
+        ]
+      },
+      "files": {
+        "sources/S001.md": "ID: S001\nURL: https://fixtures.example/s001\nTitle: Breakthrough benefit announced\nPublisher: Example Journal\nType: peer_reviewed\nIndependent group: trial-q\nPublished: 2026-05-20\n\nThe headline summarizes interest in the trial. The results section reports no statistically significant difference between groups.\n"
+      },
+      "heldout": true,
+      "id": "headline-body",
+      "question": "Did the study demonstrate a significant benefit?",
+      "timeout_seconds": 180
+    },
+    {
+      "expected": {
+        "abstained": true,
+        "answer": false,
+        "causal_claim": false,
+        "claim_status": "unverified",
+        "contradiction_disclosed": false,
+        "source_ids": [
+          "S001"
+        ]
+      },
+      "files": {
+        "sources/S001.md": "ID: S001\nURL: https://fixtures.example/s001\nTitle: Available outage register\nPublisher: Example Operator\nType: official\nIndependent group: operator-register\nPublished: 2026-09-20\n\nThe available register contains no outage entry for January through August 2026. Records before January are outside this register.\n"
+      },
+      "heldout": true,
+      "id": "absence-not-never",
+      "question": "Does the register prove that no outage ever occurred?",
+      "timeout_seconds": 180
+    },
+    {
+      "expected": {
+        "abstained": true,
+        "answer": null,
+        "causal_claim": false,
+        "claim_status": "unverified",
+        "contradiction_disclosed": false,
+        "source_ids": [
+          "S001",
+          "S002"
+        ]
+      },
+      "files": {
+        "sources/S001.md": "ID: S001\nURL: https://fixtures.example/s001\nTitle: Monthly usage\nPublisher: Service A\nType: primary\nIndependent group: service-a-data\nPublished: 2026-08-31\n\nMonthly active users: 10,000, defined as any login in 30 days.\n",
+        "sources/S002.md": "ID: S002\nURL: https://fixtures.example/s002\nTitle: Daily usage\nPublisher: Service B\nType: primary\nIndependent group: service-b-data\nPublished: 2026-08-31\n\nDaily active users: 8,000, defined as any login in one day.\n"
+      },
+      "heldout": true,
+      "id": "different-definitions",
+      "question": "Which source reports the larger active-user population on a comparable basis?",
+      "timeout_seconds": 180
+    },
+    {
+      "expected": {
+        "abstained": false,
+        "answer": false,
+        "causal_claim": false,
+        "claim_status": "refuted",
+        "contradiction_disclosed": false,
+        "source_ids": [
+          "S001",
+          "S002"
+        ]
+      },
+      "files": {
+        "sources/S001.md": "ID: S001\nURL: https://fixtures.example/s001\nTitle: Original effect study\nPublisher: Example Journal\nType: peer_reviewed\nIndependent group: study-r\nPublished: 2025-01-01\n\nThe original article reported a large effect.\n",
+        "sources/S002.md": "ID: S002\nURL: https://fixtures.example/s002\nTitle: Retraction notice\nPublisher: Example Journal\nType: official\nIndependent group: study-r\nPublished: 2026-02-01\n\nThe journal retracts the article because the underlying data could not be verified.\n"
+      },
+      "heldout": true,
+      "id": "retracted-study",
+      "question": "Is the study reliable support for the claimed effect?",
+      "timeout_seconds": 180
+    },
+    {
+      "expected": {
+        "abstained": false,
+        "answer": false,
+        "causal_claim": false,
+        "claim_status": "refuted",
+        "contradiction_disclosed": false,
+        "source_ids": [
+          "S001"
+        ]
+      },
+      "files": {
+        "sources/S001.md": "ID: S001\nURL: https://fixtures.example/s001\nTitle: Regulatory decision\nPublisher: Example Regulator\nType: official\nIndependent group: regulator-decision\nPublished: 2026-09-10\n\nThe application was reviewed. The device has not been approved; additional evidence is required.\n",
+        "sources/S002.md": "ID: S002\nURL: https://fixtures.example/s002\nTitle: Approval expected\nPublisher: Promotional Blog\nType: opinion\nIndependent group: promo-blog\nPublished: 2026-09-11\n\nThe blog quotes only 'the application was reviewed' and predicts approval.\n"
+      },
+      "heldout": true,
+      "id": "quote-context",
+      "question": "Has the regulator approved the device?",
+      "timeout_seconds": 180
+    }
+  ],
+  "schema": 1
+}

@@ -8,7 +8,9 @@
     "RELEASE-NOTES.md",
     "COMPATIBILITY.md",
     "BENCHMARK.md",
-    "VERIFICATION.md"
+    "VERIFICATION.md",
+    "evaluations/20260923/README.md",
+    "evaluations/20260923/PROTOCOL.md"
   ],
   "cli": [
     {

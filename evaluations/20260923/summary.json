@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "attempts": 120,
+  "model": "openai/gpt-5.6-sol",
+  "reasoning": "low",
+  "runtime": "OpenClaw 2026.9.3",
+  "arms": {
+    "before": {
+      "attempts": 60,
+      "valid": 59,
+      "invalid": 1,
+      "strict_passed": 0,
+      "mean_score_all_attempts": 0.8125,
+      "mean_score_valid_runtime": 0.8263,
+      "median_seconds": 37.76,
+      "p95_seconds": 59.66,
+      "mean_total_tokens": 29162.8,
+      "mean_model_calls": 5.05,
+      "target_skill_read_trials": 0,
+      "artifact_audit_passed": 0,
+      "sources_preserved": 60
+    },
+    "after": {
+      "attempts": 60,
+      "valid": 58,
+      "invalid": 2,
+      "strict_passed": 40,
+      "mean_score_all_attempts": 0.9187,
+      "mean_score_valid_runtime": 0.9504,
+      "median_seconds": 84.75,
+      "p95_seconds": 135.82,
+      "mean_total_tokens": 77035,
+      "mean_model_calls": 8.88,
+      "target_skill_read_trials": 51,
+      "artifact_audit_passed": 58,
+      "sources_preserved": 60
+    }
+  },
+  "planned_attempts_complete": true,
+  "runtime_complete": false,
+  "complete": true,
+  "after_improved": true
+}

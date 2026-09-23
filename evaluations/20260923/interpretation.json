@@ -1,0 +1,77 @@
+{
+  "schema": 1,
+  "review": "Post-run, non-blinded maintainer review; original strict scores are unchanged.",
+  "after": {
+    "attempts": 60,
+    "valid_runtime": 58,
+    "strict_passed": 40,
+    "strict_failed_valid_runtime": 18,
+    "invalid_runtime": 2,
+    "substantively_acceptable_central_answer_valid_runtime": 58,
+    "substantive_central_answer_failures_valid_runtime": 0
+  },
+  "before": {
+    "attempts": 60,
+    "valid_runtime": 59,
+    "strict_passed": 0,
+    "substantively_acceptable_central_answer_valid_runtime": 59,
+    "artifact_audit_passed": 0
+  },
+  "strict_failure_review": [
+    {
+      "case": "absence-not-never",
+      "repetitions": [0, 1, 2],
+      "classification": "representation_or_rubric_ambiguity",
+      "reason": "The answer correctly rejects the claim that a bounded register proves no outage ever; the model used refuted/not-abstained while gold used unverified/abstained."
+    },
+    {
+      "case": "corrected-number",
+      "repetitions": [1, 2],
+      "classification": "representation_or_rubric_ambiguity",
+      "reason": "The corrected value 41 and both records were used; the model conservatively disclosed the superseded value as a contradiction while gold did not."
+    },
+    {
+      "case": "denominator",
+      "repetitions": [0, 1, 2],
+      "classification": "representation_or_rubric_ambiguity",
+      "reason": "The computed answer 80% is correct; the model labeled the calculation inference while gold labeled it verified."
+    },
+    {
+      "case": "quote-context",
+      "repetitions": [1],
+      "classification": "representation_or_rubric_ambiguity",
+      "reason": "The answer correctly says the device is not approved and cites the regulator; verified-false and refuted encode the same conclusion here."
+    },
+    {
+      "case": "shared-dataset",
+      "repetitions": [0, 1, 2],
+      "classification": "representation_or_rubric_ambiguity",
+      "reason": "The answer correctly rejects independent verification because both analyses use Dataset Z; the model used refuted while gold used supported for the underlying 12 percent result."
+    },
+    {
+      "case": "syndicated-origin",
+      "repetitions": [0, 1, 2],
+      "classification": "representation_or_rubric_ambiguity",
+      "reason": "The answer correctly rejects independent verification and identifies both documents; the strict mismatch concerns status and whether a negative answer also requires abstention."
+    },
+    {
+      "case": "unit-equivalence",
+      "repetitions": [1, 2],
+      "classification": "representation_or_rubric_ambiguity",
+      "reason": "The exact conversion to 2 MiB is correct; the model labeled arithmetic conversion inference while gold labeled it verified."
+    },
+    {
+      "case": "vendor-superlative",
+      "repetitions": [0],
+      "classification": "representation_or_rubric_ambiguity",
+      "reason": "The model abstained with null because no comparative evidence exists; the prompt itself instructed null on insufficient evidence while gold expected false plus abstention."
+    },
+    {
+      "case": "vendor-superlative",
+      "repetitions": [1, 2],
+      "classification": "invalid_runtime",
+      "reason": "The ChatGPT subscription returned a usage-limit error. Both attempts remain in the denominator and were not rerun."
+    }
+  ],
+  "limit": "This interpretation is explanatory, not a replacement for preregistered strict scores or an independent factuality assessment."
+}
