@@ -42,13 +42,14 @@ a deep research task. Multiple agents using the same model are not independent e
    source itself. Read [the source policy](references/source-policy.md) for eligibility rules.
 4. Record what each source supports or contradicts. Treat copies that depend on one origin as one
    evidence family.
-5. Seek disconfirming evidence for consequential claims. Preserve unresolved conflicts and follow
-   [the contradiction policy](references/contradiction-policy.md).
+5. Seek disconfirming evidence for consequential claims. Only when eligible sources materially
+   disagree, read and follow [the contradiction policy](references/contradiction-policy.md).
 6. Draft only at the strength supported by the ledger. Mark inference and uncertainty explicitly.
-7. Put citations beside the claims they support. Never invent a URL, publication detail, quote, or
-   retrieval result.
+7. Put `[Cnnn][Snnn]` markers beside each report claim they identify and support. Never invent a URL,
+   publication detail, quote, or retrieval result.
 8. For standard/deep work, run `python3 scripts/validate-ledger.py RESEARCH_DIR`, then
-   `python3 scripts/audit-report.py RESEARCH_DIR`. Fix failures or report them as incomplete.
+   `python3 scripts/audit-report.py RESEARCH_DIR` using the configured exec host without overriding
+   it. Fix failures or report them as incomplete.
 
 ## Stop conditions
 

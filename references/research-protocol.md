@@ -11,7 +11,8 @@ authoritative source is sufficient, but they still must open the source and cite
 - `claim-ledger.json`: material claims, status, citations and evidence relations.
 - `source-register.json`: retrieved source metadata and evidence-family identity.
 - `contradictions.json`: material disagreements and their disclosed resolution or non-resolution.
-- `report.md`: the user-facing synthesis with adjacent `[Snnn]` citations.
+- `report.md`: the user-facing synthesis with one adjacent `[Cnnn]` marker per ledger claim and its
+  supporting `[Snnn]` citations in the same paragraph.
 - `final-audit.json`: generated audit evidence; do not author it by hand.
 
 ## Claim statuses
