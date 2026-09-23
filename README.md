@@ -12,6 +12,8 @@ Use it for fact-checking, time-sensitive information, source comparisons, cited 
 decision whose factual premises must be traceable. Direct computation and questions fully answered
 by user-supplied material do not need this workflow. A narrow official-doc lookup can use Quick mode;
 multiple material claims use Standard mode; broad or conflicting evidence uses Deep mode.
+Standard starts with three independent evidence families and expands to five only when a gap,
+conflict or counterevidence requirement justifies it.
 
 ## Expected result
 
@@ -30,8 +32,8 @@ From a reviewed checkout:
 bash examples/quickstart.sh
 ```
 
-The example creates a private temporary directory, writes one synthetic source and claim, validates
-their relationship, and checks the final report. It prints the artifact directory and ends with
+The example creates a private temporary directory, writes one synthetic evidence pack, renders all
+managed artifacts in one operation, and checks the final report. It prints the artifact directory and ends with
 `Quickstart passed: research-verifier`. It does not use the network, a model, or production data.
 
 ## Using it from OpenClaw
@@ -50,12 +52,14 @@ between agents is never counted as source corroboration.
 
 Standard and Deep research use a directory containing:
 
+- `evidence-pack.json` for the Standard one-pass authoring input
 - `research-plan.md`
 - `claim-ledger.json`
 - `source-register.json`
 - `contradictions.json`
 - `report.md`
 - generated `final-audit.json`
+- generated `.research-verifier-render.json` drift manifest on the Standard Fast Path
 
 Report paragraphs use transparent markers such as `[C001][S001]`. A conflicted or unverified claim
 also exposes `[conflicted]` or `[unverified]`. Completion requires every material claim to have an
@@ -65,14 +69,31 @@ The reviewer must still inspect source quality and entailment.
 ## Commands
 
 ```bash
+python3 scripts/finalize-research.py \
+  /absolute/output/research/evidence-pack.json /absolute/output/research
+```
+
+If the audit fails, fix the evidence pack and replace only unchanged managed artifacts:
+
+```bash
+python3 scripts/finalize-research.py \
+  /absolute/output/research/evidence-pack.json /absolute/output/research \
+  --replace-managed
+```
+
+Deep/manual recovery commands remain available:
+
+```bash
 python3 scripts/init-research.py /absolute/output/research
 python3 scripts/validate-ledger.py /absolute/output/research
 python3 scripts/audit-report.py /absolute/output/research
 ```
 
-Initialization refuses to overwrite any managed artifact. Validation is offline and does not fetch
-URLs. The report audit writes `final-audit.json` even on failure so the exact defects remain visible.
-Schemas are under `schemas/`; behavioral policy is under `references/`.
+The Standard finalizer turns one pack into the plan, ledgers, deterministic claim/source markers,
+report and audit. It refuses ordinary overwrite; `--replace-managed` checks prior hashes and rejects
+owner drift. Initialization also refuses overwrite. Validation is offline and does not fetch URLs.
+The report audit writes `final-audit.json` even on failure so defects remain visible. Schemas are
+under `schemas/`; behavioral policy is under `references/`.
 
 ## Private checkout
 

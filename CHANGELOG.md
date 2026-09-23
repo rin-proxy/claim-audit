@@ -1,5 +1,13 @@
 # Changelog
 
+## 1.1.0 — 2026-09-23
+
+- Add one-pass Standard evidence-pack rendering and audit.
+- Generate report claim/source markers deterministically.
+- Add hash-guarded managed repair that preserves unrelated files.
+- Tighten Quick/Standard/Deep routing, source budgets and stop conditions.
+- Keep the full protocol as Deep/manual recovery rather than loading it for routine Standard work.
+
 ## 1.0.0 — 2026-09-23
 
 - Add Quick, Standard and Deep source-grounded research routing.

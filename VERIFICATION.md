@@ -8,6 +8,8 @@ synthetic evidence audit and documentation contracts to pass without credentials
 
 Negative fixtures must reject duplicate evidence families presented as independent corroboration,
 missing adjacent citations, unregistered report URLs and destructive initialization.
+Fast-path tests must also prove one-pack rendering, deterministic markers, inspectable audit failure,
+ordinary overwrite refusal, drift-safe repair and preservation of unrelated owner files.
 
 ## Isolated OpenClaw acceptance
 
@@ -22,6 +24,11 @@ conflict disclosure, abstention and temporal correctness. Token and latency resu
 
 Do not infer universal accuracy from synthetic tasks, one transcript, a passing packaging test or
 agreement among same-model agents. Record exact source and runtime pins in `BENCHMARK.md`.
+
+For an efficiency release, compare the previous reviewed skill commit with the candidate using the
+same cases and model settings. Accept only when every runtime-valid candidate artifact audit passes,
+source fixtures remain unchanged, no new substantive central-answer failure appears, and median
+time, mean tokens or mean model calls materially improve. Publish regressions and invalid runs.
 
 ## Lifecycle E2E
 

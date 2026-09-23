@@ -1,7 +1,9 @@
 # Research protocol
 
-Use this protocol for standard and deep research. Quick lookups may answer directly when a single
-authoritative source is sufficient, but they still must open the source and cite the supported claim.
+Use this full protocol for Deep research or manual recovery. Standard research should use
+[`standard-fast-path.md`](standard-fast-path.md), which renders and audits the same core artifacts
+from one evidence pack. Quick lookups may answer directly when a single authoritative source is
+sufficient, but they still must open the source and cite the supported claim.
 
 ## Evidence directory
 

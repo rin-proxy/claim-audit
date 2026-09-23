@@ -1,4 +1,15 @@
-# Release notes — 1.0.0
+# Release notes — 1.1.0
+
+Standard research now authors one evidence pack. A deterministic finalizer renders the plan, ledgers,
+claim/source markers, report, drift manifest and final audit in one command. Repair verifies hashes
+before replacing managed artifacts and preserves unrelated owner files.
+
+Routing now favors Quick for a narrow low-risk official lookup, caps the initial Standard source
+budget at three independent evidence families, and stops repeated-origin searching. Deep research
+retains the complete manual protocol. Model efficiency evidence is published separately after the
+same-case comparison completes; static tests alone do not establish a speedup.
+
+## 1.0.0
 
 This release introduces an inspectable research workflow with claim statuses, source provenance,
 contradiction disclosure and adjacent citation auditing. It uses no background service and makes no

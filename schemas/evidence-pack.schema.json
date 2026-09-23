@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/rin-proxy/research-verifier/schemas/evidence-pack.schema.json",
+  "title": "Research Verifier Evidence Pack",
+  "type": "object",
+  "required": ["schema", "plan", "sources", "claims", "contradictions", "report"],
+  "additionalProperties": false,
+  "properties": {
+    "schema": {"const": 1},
+    "plan": {
+      "type": "object",
+      "required": ["question", "scope", "as_of_time", "completion_rule"],
+      "additionalProperties": false,
+      "properties": {
+        "question": {"type": "string", "minLength": 1},
+        "scope": {"type": "string", "minLength": 1},
+        "as_of_time": {"type": "string", "minLength": 1},
+        "completion_rule": {"type": "string", "minLength": 1}
+      }
+    },
+    "sources": {"type": "array", "items": {"type": "object"}},
+    "claims": {"type": "array", "items": {"type": "object"}},
+    "contradictions": {"type": "array", "items": {"type": "object"}},
+    "report": {
+      "type": "object",
+      "required": ["title", "sections"],
+      "additionalProperties": false,
+      "properties": {
+        "title": {"type": "string", "minLength": 1},
+        "sections": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["claim_id", "text"],
+            "additionalProperties": false,
+            "properties": {
+              "claim_id": {"type": "string", "pattern": "^C[0-9]{3,}$"},
+              "text": {"type": "string", "minLength": 1}
+            }
+          }
+        }
+      }
+    }
+  }
+}
