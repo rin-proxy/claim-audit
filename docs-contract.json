@@ -10,13 +10,20 @@
     "BENCHMARK.md",
     "VERIFICATION.md",
     "evaluations/20260923/README.md",
-    "evaluations/20260923/PROTOCOL.md"
+    "evaluations/20260923/PROTOCOL.md",
+    "evaluations/20260923-fast-path/README.md",
+    "evaluations/20260923-fast-path/PROTOCOL.md"
   ],
   "cli": [
     {
       "source": "scripts/lifecycle.py",
       "document": "README.md",
       "flags": ["--workspace", "--ref"]
+    },
+    {
+      "source": "scripts/finalize-research.py",
+      "document": "README.md",
+      "flags": ["--replace-managed"]
     }
   ],
   "required_files": [
@@ -25,6 +32,9 @@
     "schemas/claim-ledger.schema.json",
     "schemas/source-register.schema.json",
     "schemas/contradictions.schema.json",
-    "schemas/final-audit.schema.json"
+    "schemas/final-audit.schema.json",
+    "schemas/evidence-pack.schema.json",
+    "scripts/finalize-research.py",
+    "references/standard-fast-path.md"
   ]
 }

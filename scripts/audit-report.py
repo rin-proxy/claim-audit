@@ -8,11 +8,8 @@ from urllib.parse import urlsplit
 from research_validation import validate
 
 
-def main() -> int:
-    parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("directory", type=Path)
-    args = parser.parse_args()
-    root = args.directory.expanduser().resolve()
+def audit(root: Path, write: bool = True) -> dict:
+    root = root.expanduser().resolve()
     result = validate(root)
     errors = list(result["errors"])
     try:
@@ -40,7 +37,7 @@ def main() -> int:
         clean = url.rstrip(".,;]")
         if clean not in registered:
             errors.append(f"report contains unregistered URL host {urlsplit(clean).netloc or 'invalid'}")
-    audit = {
+    result = {
         "schema": 1,
         "passed": not errors,
         "claims": len(ledger),
@@ -50,9 +47,18 @@ def main() -> int:
         "errors": sorted(set(errors)),
         "limit": "Structural support audit; human review is still required for source truth and entailment.",
     }
-    (root / "final-audit.json").write_text(json.dumps(audit, indent=2) + "\n", encoding="utf-8")
-    print(json.dumps(audit, indent=2))
-    return 0 if audit["passed"] else 1
+    if write:
+        (root / "final-audit.json").write_text(json.dumps(result, indent=2) + "\n", encoding="utf-8")
+    return result
+
+
+def main() -> int:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("directory", type=Path)
+    args = parser.parse_args()
+    result = audit(args.directory)
+    print(json.dumps(result, indent=2))
+    return 0 if result["passed"] else 1
 
 
 if __name__ == "__main__":
