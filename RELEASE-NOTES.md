@@ -1,4 +1,15 @@
-# Release notes — 1.1.0
+# Release notes — 2.0.0
+
+The project is now named **ClaimAudit** with the skill ID `claim-audit`. The repository moves from
+`rin-proxy/research-verifier` to `rin-proxy/claim-audit`. This is a major release because OpenClaw
+discovers skills by ID and the installed directory changes.
+
+Existing installations must uninstall the old ID with its own lifecycle script, then install the
+new package. The old package is archived rather than deleted, research artifacts remain in place,
+and intentional code customizations can be ported after review. Evidence directories carrying the
+legacy `.research-verifier-render.json` manifest remain eligible for drift-safe replacement.
+
+## 1.1.0
 
 Standard research now authors one evidence pack. A deterministic finalizer renders the plan, ledgers,
 claim/source markers, report, drift manifest and final audit in one command. Repair verifies hashes

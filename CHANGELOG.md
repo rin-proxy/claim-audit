@@ -1,5 +1,12 @@
 # Changelog
 
+## 2.0.0 — 2026-09-24
+
+- Rename the product and skill ID from `research-verifier` to `claim-audit`.
+- Move the canonical repository URL to `rin-proxy/claim-audit`.
+- Preserve safe replacement of evidence generated with the legacy render manifest.
+- Document the explicit uninstall/install migration that archives customized legacy skill code.
+
 ## 1.1.0 — 2026-09-23
 
 - Add one-pass Standard evidence-pack rendering and audit.

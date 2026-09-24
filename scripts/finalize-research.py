@@ -14,7 +14,8 @@ import sys
 import tempfile
 
 
-MANIFEST = ".research-verifier-render.json"
+MANIFEST = ".claim-audit-render.json"
+LEGACY_MANIFEST = ".research-verifier-render.json"
 MANAGED = (
     "research-plan.md",
     "source-register.json",
@@ -107,12 +108,15 @@ def render(pack: dict) -> dict[str, bytes]:
 
 
 def existing_manifest(root: Path) -> dict:
+    path = root / MANIFEST
+    if not path.exists() and (root / LEGACY_MANIFEST).exists():
+        path = root / LEGACY_MANIFEST
     try:
-        value = json.loads((root / MANIFEST).read_text(encoding="utf-8"))
+        value = json.loads(path.read_text(encoding="utf-8"))
     except (OSError, UnicodeError, json.JSONDecodeError) as exc:
-        raise ValueError(f"managed replacement requires a readable {MANIFEST} ({exc.__class__.__name__})") from exc
+        raise ValueError(f"managed replacement requires a readable render manifest ({exc.__class__.__name__})") from exc
     if value.get("schema") != 1 or not isinstance(value.get("files"), dict):
-        raise ValueError(f"invalid {MANIFEST}")
+        raise ValueError(f"invalid render manifest: {path.name}")
     return value
 
 
@@ -138,11 +142,11 @@ def finalize(pack_path: Path, root: Path, replace: bool = False) -> dict:
     if replace:
         verify_replace(root)
     else:
-        conflicts = [name for name in (*MANAGED, MANIFEST) if (root / name).exists()]
+        conflicts = [name for name in (*MANAGED, MANIFEST, LEGACY_MANIFEST) if (root / name).exists()]
         if conflicts:
             raise ValueError("refusing to overwrite managed artifacts: " + ", ".join(conflicts))
 
-    temporary = Path(tempfile.mkdtemp(prefix=".research-render-", dir=root.parent))
+    temporary = Path(tempfile.mkdtemp(prefix=".claim-audit-render-", dir=root.parent))
     try:
         for name, data in rendered.items():
             (temporary / name).write_bytes(data)

@@ -1,7 +1,8 @@
 # Standard Fast Path evaluation — 2026-09-23
 
-This directory contains publishable evidence for the `research-verifier` 1.0 control versus the 1.1
-Standard Fast Path candidate. The planned matrix completed 120 attempts: 20 synthetic cases, three
+This directory contains publishable evidence for the ClaimAudit 1.0 control versus the 1.1 Standard
+Fast Path candidate, recorded before the project was renamed from `research-verifier`. The planned
+matrix completed 120 attempts: 20 synthetic cases, three
 repetitions and two arms.
 
 - [`../20260923/cases.json`](../20260923/cases.json) contains the unchanged cases, source fixtures and

@@ -1,6 +1,7 @@
 # Isolated evaluation — 2026-09-23
 
-This directory contains the publishable evidence for the initial `research-verifier` comparison.
+This directory contains the publishable evidence for the initial ClaimAudit comparison, recorded
+before the project was renamed from `research-verifier`.
 The planned matrix completed 120 attempts: 20 cases, three repetitions and before/after arms.
 
 - [`cases.json`](cases.json) contains exact synthetic sources, questions and strict expected fields.

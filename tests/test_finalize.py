@@ -75,7 +75,16 @@ class FinalizeResearch(unittest.TestCase):
         report = (self.output / "report.md").read_text()
         self.assertIn("[C001][S001]", report)
         self.assertTrue(json.loads((self.output / "final-audit.json").read_text())["passed"])
-        self.assertTrue((self.output / ".research-verifier-render.json").is_file())
+        self.assertTrue((self.output / ".claim-audit-render.json").is_file())
+
+    def test_replacement_accepts_legacy_render_manifest(self):
+        self.assertEqual(self.run_finalize().returncode, 0)
+        current = self.output / ".claim-audit-render.json"
+        current.rename(self.output / ".research-verifier-render.json")
+        self.write_pack(pack("The current documented period remains 30 days."))
+        replaced = self.run_finalize("--replace-managed")
+        self.assertEqual(replaced.returncode, 0, replaced.stderr)
+        self.assertTrue(current.is_file())
 
     def test_refuses_overwrite_and_preserves_unrelated_files(self):
         self.assertEqual(self.run_finalize().returncode, 0)

@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "canonical_checker": "research-verifier:scripts/check-docs.py",
+  "canonical_checker": "claim-audit:scripts/check-docs.py",
   "checker_sha256": "4b9d5fadbacebb7d0435083af924392aafb781384c6eb35c60e70cbbd94b169e",
   "documents": [
     "README.md",

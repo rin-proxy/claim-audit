@@ -16,13 +16,13 @@ class Lifecycle(unittest.TestCase):
         return p
 
     def test_install_update_rollback_uninstall_preserves_owner_data(self):
-        with tempfile.TemporaryDirectory(prefix='research verifier lifecycle ') as temp:
+        with tempfile.TemporaryDirectory(prefix='claim audit lifecycle ') as temp:
             base = Path(temp)
             ws = base/'agent workspace';ws.mkdir()
             (ws/'memory').mkdir();(ws/'memory/owner.md').write_text('owner data')
             (ws/'AGENTS.md').write_text('Owner instructions\n')
             self.call(ROOT,'install',ws)
-            target = ws/'skills'/'research-verifier'
+            target = ws/'skills'/'claim-audit'
             self.call(ROOT,'install',ws)
             self.assertEqual((ws/'AGENTS.md').read_text().count('<!-- BEGIN:'),1)
             source=base/'origin';shutil.copytree(target,source)
@@ -35,7 +35,7 @@ class Lifecycle(unittest.TestCase):
             self.assertTrue((target/'revision-proof.txt').exists())
             self.call(target,'rollback',ws)
             self.assertFalse((target/'revision-proof.txt').exists())
-            receipt=json.loads((ws/'.openclaw-skill-state/research-verifier/receipt.json').read_text())
+            receipt=json.loads((ws/'.openclaw-skill-state/claim-audit/receipt.json').read_text())
             self.assertNotIn('revision-proof.txt',receipt['files'])
             self.assertEqual((ws/'memory/owner.md').read_text(),'owner data')
             self.call(target,'update',ws,'--repo',source,'--ref','main',success=False)

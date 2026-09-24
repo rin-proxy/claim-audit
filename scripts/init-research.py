@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Create an empty research-verifier evidence directory without overwriting files."""
+"""Create an empty ClaimAudit evidence directory without overwriting files."""
 import argparse
 import json
 from pathlib import Path

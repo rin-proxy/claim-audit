@@ -12,7 +12,7 @@ scripts or schemas unless finalization reports an unexplained error.
 4. Run:
 
    ```bash
-   python3 skills/research-verifier/scripts/finalize-research.py \
+   python3 skills/claim-audit/scripts/finalize-research.py \
      research/evidence-pack.json research
    ```
 

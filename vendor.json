@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "repository": "research-verifier",
+  "repository": "claim-audit",
   "files": [
     {
       "repository": "skill-forge",

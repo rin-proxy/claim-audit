@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Deterministic validation for research-verifier evidence artifacts."""
+"""Deterministic validation for ClaimAudit evidence artifacts."""
 from __future__ import annotations
 
 from datetime import datetime

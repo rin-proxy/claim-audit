@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://github.com/rin-proxy/research-verifier/schemas/evidence-pack.schema.json",
-  "title": "Research Verifier Evidence Pack",
+  "$id": "https://github.com/rin-proxy/claim-audit/schemas/evidence-pack.schema.json",
+  "title": "ClaimAudit Evidence Pack",
   "type": "object",
   "required": ["schema", "plan", "sources", "claims", "contradictions", "report"],
   "additionalProperties": false,
