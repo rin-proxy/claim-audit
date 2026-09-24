@@ -1,4 +1,4 @@
-# research-verifier
+# ClaimAudit
 
 Turn external research into an inspectable claim-and-source record. The skill separates evidence,
 inference, unresolved conflict and missing support without claiming that structural validation proves
@@ -24,7 +24,7 @@ bash examples/quickstart.sh
 ```
 
 The provider-free example renders one synthetic evidence pack and audits the generated bundle. It
-ends with `Quickstart passed: research-verifier` and does not access production data.
+ends with `Quickstart passed: claim-audit` and does not access production data.
 
 ## Install
 
@@ -32,8 +32,8 @@ Authenticate to this private repository, then check out a reviewed full commit. 
 a clone URL, prompt or log.
 
 ```bash
-git clone https://github.com/rin-proxy/research-verifier.git
-cd research-verifier
+git clone https://github.com/rin-proxy/claim-audit.git
+cd claim-audit
 REF=FULL_40_CHARACTER_COMMIT
 git checkout --detach "$REF"
 WS=/absolute/agent/workspace
@@ -65,13 +65,28 @@ Deep/manual recovery remains available through `init-research.py`, `validate-led
 
 ```bash
 bash scripts/update.sh --workspace "$WS" \
-  --repo https://github.com/rin-proxy/research-verifier.git --ref "$REF"
+  --repo https://github.com/rin-proxy/claim-audit.git --ref "$REF"
 bash scripts/rollback.sh --workspace "$WS"
 bash scripts/uninstall.sh --workspace "$WS"
 ```
 
 Pinned updates require a reviewed full commit. Rollback restores managed code; uninstall archives
 managed code outside discovery while preserving owner files and research artifacts.
+
+### Migrating from `research-verifier`
+
+The new skill ID is a breaking package rename, so the old lifecycle intentionally refuses to update
+across the name boundary. Remove the old package with its own uninstall script, then install
+ClaimAudit from a reviewed commit:
+
+```bash
+bash "$WS/skills/research-verifier/scripts/uninstall.sh" --workspace "$WS"
+bash scripts/install.sh --workspace "$WS"
+```
+
+Uninstall archives the old managed package under `.openclaw-skill-state/research-verifier/` and
+preserves workspace research artifacts. Review and manually port intentional code customizations;
+the migration does not guess how to merge them into the renamed package.
 
 ## Safety, verification and evidence
 

@@ -1,7 +1,7 @@
 ---
-name: research-verifier
+name: claim-audit
 description: Research external or time-sensitive factual questions with traceable sources, claim-level evidence, contradiction handling, and a final support audit. Use when an answer needs web research, citations, fact-checking, or comparison of sources; skip for tasks fully answered by supplied material or direct computation.
-version: 1.1.0
+version: 2.0.0
 metadata:
   openclaw:
     emoji: "🔎"
@@ -16,10 +16,10 @@ triggers:
   - "cite your sources"
 author: Rin
 license: UNLICENSED
-lastUpdated: 2026-09-23
+lastUpdated: 2026-09-24
 ---
 
-# Research Verifier
+# ClaimAudit
 
 Produce a source-grounded answer whose factual claims can be inspected. Do not promise truth from
 agreement, a citation count, or confident prose. A claim may be verified, supported, an inference,
@@ -83,7 +83,7 @@ as a side effect of research.
 Standard Fast Path:
 
 ```bash
-python3 skills/research-verifier/scripts/finalize-research.py \
+python3 skills/claim-audit/scripts/finalize-research.py \
   research/evidence-pack.json research
 ```
 

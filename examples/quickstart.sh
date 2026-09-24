@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 ROOT=$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)
-OUT=$(mktemp -d "${TMPDIR:-/tmp}/research-verifier-example.XXXXXX")
+OUT=$(mktemp -d "${TMPDIR:-/tmp}/claim-audit-example.XXXXXX")
 python3 - "$OUT/evidence-pack.json" <<'PY'
 import json,sys
 from pathlib import Path
@@ -21,4 +21,4 @@ d=json.load(open(sys.argv[1]));assert d['passed'] and d['claims']==1 and d['sour
 PY
 grep -q '\[C001\]\[S001\]' "$OUT/report.md"
 echo "Artifacts: $OUT"
-echo "Quickstart passed: research-verifier"
+echo "Quickstart passed: claim-audit"
