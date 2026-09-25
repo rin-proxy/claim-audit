@@ -1,5 +1,8 @@
 # ClaimAudit
 
+[![Verify](https://github.com/rin-proxy/claim-audit/actions/workflows/verify.yml/badge.svg)](https://github.com/rin-proxy/claim-audit/actions/workflows/verify.yml)
+[![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](LICENSE)
+
 Turn external research into an inspectable claim-and-source record. The skill separates evidence,
 inference, unresolved conflict and missing support without claiming that structural validation proves
 real-world truth.
@@ -28,14 +31,13 @@ ends with `Quickstart passed: claim-audit` and does not access production data.
 
 ## Install
 
-Authenticate to this private repository, then check out a reviewed full commit. Never put a token in
-a clone URL, prompt or log.
+Clone the public repository, then check out a reviewed release or full commit. Releases are immutable;
+avoid installing from a moving branch when reproducibility matters.
 
 ```bash
 git clone https://github.com/rin-proxy/claim-audit.git
 cd claim-audit
-REF=FULL_40_CHARACTER_COMMIT
-git checkout --detach "$REF"
+git checkout --detach v2.1.0
 WS=/absolute/agent/workspace
 bash scripts/install.sh --workspace "$WS"
 bash scripts/status.sh --workspace "$WS"
@@ -63,7 +65,17 @@ Deep/manual recovery remains available through `init-research.py`, `validate-led
 
 ## Update and recovery
 
+Check the latest stable GitHub release without installing it:
+
 ```bash
+python3 scripts/check-update.py
+```
+
+Review its release notes and resolve the selected tag to a full commit before updating:
+
+```bash
+git fetch origin --tags
+REF=$(git rev-list -n 1 v2.1.0)
 bash scripts/update.sh --workspace "$WS" \
   --repo https://github.com/rin-proxy/claim-audit.git --ref "$REF"
 bash scripts/rollback.sh --workspace "$WS"
@@ -72,6 +84,17 @@ bash scripts/uninstall.sh --workspace "$WS"
 
 Pinned updates require a reviewed full commit. Rollback restores managed code; uninstall archives
 managed code outside discovery while preserving owner files and research artifacts.
+
+If installed code has changed, update stops instead of overwriting it. Export an inspectable archive
+of added and modified files, then reconcile those changes in a Git fork or patch branch:
+
+```bash
+python3 scripts/export-customizations.py --workspace "$WS" --output claim-audit-customizations.tar.gz
+```
+
+The export includes changed and added files plus a manifest of deleted paths. It can contain the
+operator's own sensitive content, so review it before sharing. A forced update archives the previous
+package but never attempts an automatic source merge.
 
 ### Migrating from `research-verifier`
 
@@ -107,4 +130,5 @@ See [BENCHMARK.md](BENCHMARK.md) for strict-score interpretation, runtime failur
 
 Detailed documentation: [acceptance and recovery](VERIFICATION.md) ·
 [tested compatibility](COMPATIBILITY.md) · [release notes](RELEASE-NOTES.md) ·
-[changelog](CHANGELOG.md) · [commercial license](LICENSE-COMMERCIAL.md).
+[source provenance](PROVENANCE.md) · [contributing](CONTRIBUTING.md) ·
+[security](SECURITY.md) · [Apache-2.0 license](LICENSE).

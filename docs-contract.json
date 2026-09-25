@@ -5,6 +5,14 @@
   "documents": [
     "README.md",
     "SKILL.md",
+    "CONTRIBUTING.md",
+    "CODE_OF_CONDUCT.md",
+    "SECURITY.md",
+    "SUPPORT.md",
+    "GOVERNANCE.md",
+    "ROADMAP.md",
+    "PROVENANCE.md",
+    "SECURITY-AUDIT.md",
     "RELEASE-NOTES.md",
     "COMPATIBILITY.md",
     "BENCHMARK.md",
@@ -24,6 +32,11 @@
       "source": "scripts/finalize-research.py",
       "document": "README.md",
       "flags": ["--replace-managed"]
+    },
+    {
+      "source": "scripts/export-customizations.py",
+      "document": "README.md",
+      "flags": ["--workspace", "--output"]
     }
   ],
   "required_files": [
@@ -35,6 +48,9 @@
     "schemas/final-audit.schema.json",
     "schemas/evidence-pack.schema.json",
     "scripts/finalize-research.py",
+    "scripts/check-update.py",
+    "scripts/export-customizations.py",
+    "scripts/build-release.py",
     "references/standard-fast-path.md"
   ]
 }

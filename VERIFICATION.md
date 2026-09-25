@@ -3,8 +3,14 @@
 ## Deterministic acceptance
 
 Run `bash test.sh`, `bash examples/quickstart.sh`, and `python3 scripts/check-docs.py` from a clean
-checkout. Success requires unit tests, lifecycle preservation, vendor hashes, shell syntax, the
+checkout. Success requires unit tests, lifecycle preservation, shell syntax, the
 synthetic evidence audit and documentation contracts to pass without credentials or network access.
+
+Public-release acceptance additionally requires an anonymous fresh clone, checkout of the immutable
+release tag, update-check resolution to the same commit, install/status/rollback/uninstall in a
+temporary workspace, release checksum verification, and confirmation that no private dependency is
+needed. ClawHub publication is evaluated separately because its registry license may differ from the
+repository license.
 
 Negative fixtures must reject duplicate evidence families presented as independent corroboration,
 missing adjacent citations, unregistered report URLs and destructive initialization.
