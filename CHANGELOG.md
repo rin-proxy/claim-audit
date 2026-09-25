@@ -1,5 +1,13 @@
 # Changelog
 
+## 2.1.0 — 2026-09-25
+
+- Release ClaimAudit under Apache-2.0 with public installation and contribution guidance.
+- Make lifecycle code first-class ClaimAudit source with no private repository dependency.
+- Add update checks and customization export for safe downstream maintenance.
+- Add Python 3.11–3.13 CI, CodeQL, community health files and release asset generation.
+- Record the pre-public Git history and Actions-log security audit.
+
 ## 2.0.0 — 2026-09-24
 
 - Rename the product and skill ID from `research-verifier` to `claim-audit`.

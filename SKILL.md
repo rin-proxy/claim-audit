@@ -1,7 +1,7 @@
 ---
 name: claim-audit
 description: Research external or time-sensitive factual questions with traceable sources, claim-level evidence, contradiction handling, and a final support audit. Use when an answer needs web research, citations, fact-checking, or comparison of sources; skip for tasks fully answered by supplied material or direct computation.
-version: 2.0.0
+version: 2.1.0
 metadata:
   openclaw:
     emoji: "🔎"
@@ -15,8 +15,8 @@ triggers:
   - "find reliable sources"
   - "cite your sources"
 author: Rin
-license: UNLICENSED
-lastUpdated: 2026-09-24
+license: Apache-2.0
+lastUpdated: 2026-09-25
 ---
 
 # ClaimAudit

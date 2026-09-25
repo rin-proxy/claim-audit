@@ -1,4 +1,16 @@
-# Release notes — 2.0.0
+# Release notes — 2.1.0
+
+ClaimAudit is now a self-contained Apache-2.0 project. Public users can clone and test it without
+credentials or access to another Rin repository. The release adds an update checker, drift export,
+community contribution and security policies, Python 3.11–3.13 CI, CodeQL, and reproducible source,
+manifest, SPDX SBOM and checksum assets.
+
+The public-launch audit scanned every Git ref and historical file with Gitleaks 8.30.1, reviewed
+additional credential and internal-path patterns, and inspected all pre-launch GitHub Actions logs.
+No secret or private operational reference was found. Standard GitHub runner paths were the only
+private-path pattern in Actions logs.
+
+## 2.0.0
 
 The project is now named **ClaimAudit** with the skill ID `claim-audit`. The repository moves from
 `rin-proxy/research-verifier` to `rin-proxy/claim-audit`. This is a major release because OpenClaw
