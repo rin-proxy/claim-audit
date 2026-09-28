@@ -1,5 +1,11 @@
 # Changelog
 
+## 2.2.0 — 2026-09-28
+
+- Use current OpenClaw description routing and stable `{baseDir}` helper paths.
+- Leave owner `AGENTS.md` unchanged during normal install; retain explicit legacy-pointer migration.
+
+
 ## 2.1.0 — 2026-09-25
 
 - Release ClaimAudit under Apache-2.0 with public installation and contribution guidance.

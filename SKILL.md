@@ -1,22 +1,14 @@
 ---
 name: claim-audit
-description: Research external or time-sensitive factual questions with traceable sources, claim-level evidence, contradiction handling, and a final support audit. Use when an answer needs web research, citations, fact-checking, or comparison of sources; skip for tasks fully answered by supplied material or direct computation.
-version: 2.1.0
+description: Audit external or time-sensitive claims with traceable sources and support status. Use for web research; skip supplied-only or computation tasks.
+version: 2.2.0
 metadata:
   openclaw:
-    emoji: "🔎"
+    emoji: 🔎
     requires:
-      bins: ["python3"]
-triggers:
-  - "research this"
-  - "verify this claim"
-  - "fact check this"
-  - "compare these sources"
-  - "find reliable sources"
-  - "cite your sources"
-author: Rin
+      bins:
+      - python3
 license: Apache-2.0
-lastUpdated: 2026-09-25
 ---
 
 # ClaimAudit
@@ -83,7 +75,7 @@ as a side effect of research.
 Standard Fast Path:
 
 ```bash
-python3 skills/claim-audit/scripts/finalize-research.py \
+python3 {baseDir}/scripts/finalize-research.py \
   research/evidence-pack.json research
 ```
 

@@ -43,8 +43,9 @@ bash scripts/install.sh --workspace "$WS"
 bash scripts/status.sh --workspace "$WS"
 ```
 
-Installation adds the package and a managed instruction pointer to the selected workspace. It does
-not add a browser, search API, model provider, channel, scheduler or background service.
+Installation adds the package to the selected workspace; current OpenClaw discovers its `SKILL.md`
+without an `AGENTS.md` pointer. It does not add a browser, search API, model provider, channel,
+scheduler or background service.
 
 ## Standard workflow
 

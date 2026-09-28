@@ -1,3 +1,7 @@
+# v2.2.0 — portfolio contract
+
+Use current OpenClaw description routing and stable `{baseDir}` helper paths. Leave owner `AGENTS.md` unchanged during normal install; retain explicit legacy-pointer migration. No change is deployed directly to Rin.
+
 # Release notes — 2.1.0
 
 ClaimAudit is now a self-contained Apache-2.0 project. Public users can clone and test it without
