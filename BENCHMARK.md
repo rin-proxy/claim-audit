@@ -77,3 +77,6 @@ representation. The single control runtime failure was a retained, non-rerun sub
 
 The exact sanitized results, protocol and post-run interpretation are in
 [`evaluations/20260923-fast-path`](evaluations/20260923-fast-path/README.md).
+## Current-version certification
+
+The historical results below remain reproducibility evidence for their recorded revisions. They do not certify the current release. The current v3 plan is in `evaluations/v3/plan.json`; `evaluations/v3/STATUS.json` is authoritative. Missing live runtime evidence is reported as `not-run`.

@@ -8,3 +8,4 @@ run() {
 }
 run python3 -m unittest discover -s tests -p "test_*.py"
 run bash -n examples/quickstart.sh scripts/install.sh scripts/update.sh scripts/rollback.sh scripts/status.sh scripts/uninstall.sh
+run python3 scripts/evaluation-v3.py evaluations/v3/plan.json

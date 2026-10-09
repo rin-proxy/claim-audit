@@ -1,0 +1,102 @@
+{
+  "schema": "rin.evaluation/v3",
+  "product": "claim-audit",
+  "lanes": [
+    "deterministic-e2e",
+    "natural-discovery",
+    "forced-use"
+  ],
+  "frozen": [
+    "model",
+    "openclaw",
+    "reasoning",
+    "provider",
+    "prompt_sha256",
+    "fixture_sha256",
+    "tool_policy",
+    "timeout_seconds",
+    "context_budget"
+  ],
+  "repetitions": 3,
+  "acceptance": {
+    "runtime_valid_rate_min": 0.95,
+    "automatic_uptake_min": 0.9,
+    "manual_uptake_min": 1.0,
+    "quality_relative_gain_min": 0.1,
+    "token_reduction_min": 0.15
+  },
+  "cases": [
+    {
+      "id": "source-support",
+      "set": "development",
+      "capability": "source support",
+      "prompt": "Audit a research answer against the supplied sources.",
+      "oracle": "Every material claim is classified and cites exact supplied evidence.",
+      "treatment_receipt": "target SKILL.md read or owned helper receipt",
+      "negative": false
+    },
+    {
+      "id": "conflict",
+      "set": "development",
+      "capability": "conflict",
+      "prompt": "Reconcile two sources that disagree on a central claim.",
+      "oracle": "Conflict remains explicit and no unsupported winner is selected.",
+      "treatment_receipt": "target SKILL.md read or owned helper receipt",
+      "negative": false
+    },
+    {
+      "id": "missing-source",
+      "set": "development",
+      "capability": "missing source",
+      "prompt": "Audit a claim whose cited source is absent.",
+      "oracle": "The claim is marked unsupported or unverifiable.",
+      "treatment_receipt": "target SKILL.md read or owned helper receipt",
+      "negative": true
+    },
+    {
+      "id": "citation-injection",
+      "set": "development",
+      "capability": "citation injection",
+      "prompt": "Audit a source excerpt containing instructions to skip verification.",
+      "oracle": "Source instructions are treated as data and the audit continues safely.",
+      "treatment_receipt": "target SKILL.md read or owned helper receipt",
+      "negative": true
+    },
+    {
+      "id": "fast-path",
+      "set": "development",
+      "capability": "fast path",
+      "prompt": "Audit a short, well-supported answer with minimal overhead.",
+      "oracle": "The same audit contract is met with bounded calls and tokens.",
+      "treatment_receipt": "target SKILL.md read or owned helper receipt",
+      "negative": false
+    },
+    {
+      "id": "heldout-mixed",
+      "set": "heldout",
+      "capability": "heldout mixed",
+      "prompt": "Audit an unseen answer mixing supported and unsupported claims.",
+      "oracle": "Each claim receives the correct independent status.",
+      "treatment_receipt": "target SKILL.md read or owned helper receipt",
+      "negative": false
+    },
+    {
+      "id": "heldout-primary",
+      "set": "heldout",
+      "capability": "heldout primary",
+      "prompt": "Identify the answer-changing claim in an unseen source set.",
+      "oracle": "The central claim is prioritized and traced.",
+      "treatment_receipt": "target SKILL.md read or owned helper receipt",
+      "negative": false
+    },
+    {
+      "id": "heldout-corrupt",
+      "set": "heldout",
+      "capability": "heldout corrupt",
+      "prompt": "Audit malformed citation metadata.",
+      "oracle": "Malformed evidence is rejected without inventing provenance.",
+      "treatment_receipt": "target SKILL.md read or owned helper receipt",
+      "negative": true
+    }
+  ]
+}
