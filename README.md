@@ -135,6 +135,14 @@ comparison retained artifact audits and source preservation at 60/60 while reduc
 wall time by 34.0%, mean total tokens by 37.3%, and mean model calls by 31.3% versus the 1.0 control.
 See [BENCHMARK.md](BENCHMARK.md) for strict-score interpretation, runtime failures and limits.
 
+### Current-version comparison status
+
+The separate v3 three-repetition campaign was cancelled by the owner on 2026-10-26. The scoped
+historical benchmark remains published with its original runtime and source pins. This release does
+not claim statistically certified superiority on the current OpenClaw version; readiness is based on
+deterministic tests, functional quickstart and lifecycle checks, and the explicitly scoped recorded
+evidence.
+
 Detailed documentation: [acceptance and recovery](VERIFICATION.md) ·
 [tested compatibility](COMPATIBILITY.md) · [release notes](RELEASE-NOTES.md) ·
 [source provenance](PROVENANCE.md) · [contributing](CONTRIBUTING.md) ·
